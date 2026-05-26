@@ -17,6 +17,8 @@ export class InputManager {
     this._onKeyUp = this._onKeyUp.bind(this);
     this._onPointerDown = this._onPointerDown.bind(this);
     this._onPointerUp = this._onPointerUp.bind(this);
+    this._onPointerMove = this._onPointerMove.bind(this);
+    this._onWheel = this._onWheel.bind(this);
   }
 
   setKeyMap(map) { this.keyMap = map; }
@@ -29,6 +31,8 @@ export class InputManager {
     canvas.addEventListener('pointerdown', this._onPointerDown);
     canvas.addEventListener('pointerup', this._onPointerUp);
     canvas.addEventListener('pointercancel', this._onPointerUp);
+    canvas.addEventListener('pointermove', this._onPointerMove);
+    canvas.addEventListener('wheel', this._onWheel, { passive: false });
     canvas.style.touchAction = 'none';
   }
 
@@ -39,7 +43,25 @@ export class InputManager {
       this.canvasRef.removeEventListener('pointerdown', this._onPointerDown);
       this.canvasRef.removeEventListener('pointerup', this._onPointerUp);
       this.canvasRef.removeEventListener('pointercancel', this._onPointerUp);
+      this.canvasRef.removeEventListener('pointermove', this._onPointerMove);
+      this.canvasRef.removeEventListener('wheel', this._onWheel);
     }
+  }
+
+  _onPointerMove(e) {
+    if (!this.canvasRef) return;
+    const rect = this.canvasRef.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    this._dispatch({ type: 'move', x, y, source: 'pointer' });
+  }
+
+  _onWheel(e) {
+    e.preventDefault();
+    const rect = this.canvasRef.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    this._dispatch({ type: 'wheel', x, y, dx: e.deltaX, dy: e.deltaY, source: 'wheel' });
   }
 
   _laneFromKey(code) {

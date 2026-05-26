@@ -1,0 +1,92 @@
+{
+  "id": "dundunba",
+  "name": { "ko": "둔둔바", "en": "Dundunba" },
+  "alternativeNames": ["Doundounba", "Dunumba"],
+  "region": "guinea",
+  "ethnicGroup": "Malinké (Hamana, Wassolon)",
+  "purposes": ["warrior", "celebration"],
+  "stars": 6,
+  "tier": "intermediate",
+  "baseBpm": 110,
+  "bpmRange": { "min": 90, "max": 150 },
+  "beats": 4,
+  "subdivisions": 4,
+  "totalSteps": 16,
+  "culturalInfo": {
+    "ko": {
+      "summary": "'강한 남자들의 춤'. 마을의 용감한 전사들이 자신의 힘과 자부심을 과시하는 리듬.",
+      "history": "기니 하마나 지역 말링케족의 전통으로, 30개 이상의 변주가 존재한다. 마을의 청년들이 차례로 원 가운데 나와 도전하고 힘을 겨루는 의식.",
+      "occasion": "남성 통과의례, 전사의 춤, 마을 자긍심 축제",
+      "dance": "남자들이 채찍이나 막대기를 들고 원의 가운데에서 위협적인 춤을 춘다",
+      "famousArtists": ["Mamady Keïta", "Famoudou Konaté", "Bolokada Conde"]
+    },
+    "en": {
+      "summary": "'The Dance of the Strong Men'. A rhythm where village warriors display their strength and pride.",
+      "history": "Traditional of the Malinké people in the Hamana region of Guinea, with over 30 variations. A ceremony where village youths take turns challenging in the circle and testing their strength.",
+      "occasion": "Male initiation, warrior dances, village pride festivals",
+      "dance": "Men carrying whips or sticks perform an intimidating dance in the center of a circle",
+      "famousArtists": ["Mamady Keïta", "Famoudou Konaté", "Bolokada Conde"]
+    }
+  },
+  "pattern": {
+    "lengthInBeats": 4,
+    "loopable": true,
+    "notes": [
+      { "step": 0,  "lane": "bass", "type": "tap" },
+      { "step": 2,  "lane": "slap", "type": "tap" },
+      { "step": 3,  "lane": "tone", "type": "tap" },
+      { "step": 4,  "lane": "bass", "type": "tap" },
+      { "step": 6,  "lane": "slap", "type": "tap" },
+      { "step": 7,  "lane": "tone", "type": "tap" },
+      { "step": 8,  "lane": "bass", "type": "tap" },
+      { "step": 10, "lane": "slap", "type": "tap" },
+      { "step": 11, "lane": "tone", "type": "tap" },
+      { "step": 12, "lane": "bass", "type": "tap" },
+      { "step": 14, "lane": "slap", "type": "tap" },
+      { "step": 15, "lane": "tone", "type": "tap" }
+    ]
+  },
+  "variations": [
+    {
+      "id": "dundunba_basic",
+      "name": { "ko": "기본형", "en": "Basic" },
+      "stars": 6,
+      "patternRef": "default"
+    },
+    {
+      "id": "dundunba_advanced",
+      "name": { "ko": "고급 (전사형)", "en": "Advanced (Warrior)" },
+      "stars": 9,
+      "notes": [
+        { "step": 0,  "lane": "bass", "type": "tap" },
+        { "step": 1,  "lane": "bass", "type": "tap" },
+        { "step": 2,  "lane": "slap", "type": "tap" },
+        { "step": 3,  "lane": "tone", "type": "tap" },
+        { "step": 4,  "lane": "bass", "type": "tap" },
+        { "step": 5,  "lane": "tone", "type": "tap" },
+        { "step": 6,  "lane": "slap", "type": "tap" },
+        { "step": 7,  "lane": "slap", "type": "tap" },
+        { "step": 8,  "lane": "bass", "type": "tap" },
+        { "step": 9,  "lane": "bass", "type": "tap" },
+        { "step": 10, "lane": "slap", "type": "tap" },
+        { "step": 11, "lane": "tone", "type": "tap" },
+        { "step": 12, "lane": "bass", "type": "tap" },
+        { "step": 13, "lane": "tone", "type": "tap" },
+        { "step": 14, "lane": "slap", "type": "tap" },
+        { "step": 15, "lane": "slap", "type": "tap" }
+      ]
+    }
+  ],
+  "tips": {
+    "ko": [
+      "베이스의 강력함과 슬랩의 날카로움 대비가 핵심입니다",
+      "B-쉼-S-T 4스텝 패턴이 반복됩니다",
+      "전사의 호기로운 마음으로 강하게 치세요"
+    ],
+    "en": [
+      "The contrast between powerful bass and sharp slap is key",
+      "The 4-step B-rest-S-T pattern repeats",
+      "Play strong with the bold spirit of a warrior"
+    ]
+  }
+}

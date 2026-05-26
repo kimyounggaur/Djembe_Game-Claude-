@@ -45,8 +45,15 @@ export class LoadingScene extends Scene {
       ]
     };
     await this.app.assetLoader.loadAll(manifest, (p) => {
-      this.targetProgress = p;
+      this.targetProgress = p * 0.85;
     });
+    try {
+      await this.app.rhythmLoader.loadLibrary();
+      this.targetProgress = 1;
+    } catch (e) {
+      console.warn('Rhythm library load failed', e);
+      this.targetProgress = 1;
+    }
     setTimeout(() => {
       this.completed = true;
       setTimeout(() => this.manager.goTo('title'), 600);

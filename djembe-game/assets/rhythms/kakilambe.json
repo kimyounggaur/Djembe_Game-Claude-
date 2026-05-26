@@ -1,0 +1,84 @@
+{
+  "id": "kakilambe",
+  "name": { "ko": "카키람베", "en": "Kakilambe" },
+  "alternativeNames": ["Kakilambé", "Kakilambay"],
+  "region": "guinea",
+  "ethnicGroup": "Baga (기니 해안)",
+  "purposes": ["ritual"],
+  "stars": 9,
+  "tier": "advanced",
+  "baseBpm": 95,
+  "bpmRange": { "min": 75, "max": 130 },
+  "beats": 4,
+  "subdivisions": 4,
+  "totalSteps": 16,
+  "culturalInfo": {
+    "ko": {
+      "summary": "신성한 숲의 정령 카키람베를 불러내는 의식 리듬. 가장 신비롭고 강력한 리듬 중 하나.",
+      "history": "기니 해안의 바가족이 7년에 한 번 거대한 가면을 쓴 정령 '카키람베'를 숲에서 불러내 마을의 안녕을 점친다. 이 리듬은 그 의식에서만 연주되는 신성한 음악.",
+      "occasion": "7년 주기 정령 의식, 마을 정화 의식, 중대한 점복 의례",
+      "dance": "거대한 가면을 쓴 무용수가 천천히 신비롭게 움직인다. 마을 사람들은 멀리서 지켜본다",
+      "famousArtists": ["Famoudou Konaté", "Les Ballets Africains"]
+    },
+    "en": {
+      "summary": "A ritual rhythm to summon the forest spirit Kakilambe. One of the most mysterious and powerful rhythms.",
+      "history": "The Baga people of coastal Guinea summon the giant masked spirit 'Kakilambe' from the forest once every 7 years to divine the village's well-being. This rhythm is sacred music played only in that ceremony.",
+      "occasion": "7-year cycle spirit ceremony, village purification, major divination rites",
+      "dance": "A dancer in a huge mask moves slowly and mysteriously while villagers watch from afar",
+      "famousArtists": ["Famoudou Konaté", "Les Ballets Africains"]
+    }
+  },
+  "pattern": {
+    "lengthInBeats": 4,
+    "loopable": true,
+    "notes": [
+      { "step": 0,  "lane": "bass", "type": "tap" },
+      { "step": 3,  "lane": "tone", "type": "tap" },
+      { "step": 5,  "lane": "slap", "type": "tap" },
+      { "step": 7,  "lane": "tone", "type": "tap" },
+      { "step": 9,  "lane": "bass", "type": "tap" },
+      { "step": 11, "lane": "tone", "type": "tap" },
+      { "step": 13, "lane": "slap", "type": "tap" },
+      { "step": 15, "lane": "tone", "type": "tap" }
+    ]
+  },
+  "variations": [
+    {
+      "id": "kakilambe_basic",
+      "name": { "ko": "기본형", "en": "Basic" },
+      "stars": 9,
+      "patternRef": "default"
+    },
+    {
+      "id": "kakilambe_ritual",
+      "name": { "ko": "의식 형태", "en": "Ritual Form" },
+      "stars": 10,
+      "notes": [
+        { "step": 0,  "lane": "bass", "type": "tap" },
+        { "step": 2,  "lane": "tone", "type": "tap" },
+        { "step": 3,  "lane": "tone", "type": "tap" },
+        { "step": 5,  "lane": "slap", "type": "tap" },
+        { "step": 6,  "lane": "tone", "type": "tap" },
+        { "step": 7,  "lane": "slap", "type": "tap" },
+        { "step": 9,  "lane": "bass", "type": "tap" },
+        { "step": 10, "lane": "tone", "type": "tap" },
+        { "step": 11, "lane": "tone", "type": "tap" },
+        { "step": 13, "lane": "slap", "type": "tap" },
+        { "step": 14, "lane": "tone", "type": "tap" },
+        { "step": 15, "lane": "slap", "type": "tap" }
+      ]
+    }
+  ],
+  "tips": {
+    "ko": [
+      "불규칙한 패턴이 신비로움의 핵심. 8박과 9박 사이의 어긋남을 살리세요",
+      "베이스가 1박과 9박이 아닌 1박과 10박에서 오는 점에 주목하세요",
+      "느린 BPM에서도 매우 어렵습니다. 한 박씩 정확히 익히세요"
+    ],
+    "en": [
+      "The irregular pattern is the soul of mystery. Preserve the displacement between beats 8 and 9",
+      "Notice the bass comes on beats 1 and 10, not 1 and 9",
+      "Very difficult even at slow BPM. Master one beat at a time"
+    ]
+  }
+}

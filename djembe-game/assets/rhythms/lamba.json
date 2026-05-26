@@ -1,0 +1,92 @@
+{
+  "id": "lamba",
+  "name": { "ko": "람바", "en": "Lamba" },
+  "alternativeNames": ["Lamban", "Lambang"],
+  "region": "mali",
+  "ethnicGroup": "Mandinka, Malinké (Griot 가문)",
+  "purposes": ["ritual"],
+  "stars": 8,
+  "tier": "advanced",
+  "baseBpm": 140,
+  "bpmRange": { "min": 110, "max": 170 },
+  "beats": 4,
+  "subdivisions": 4,
+  "totalSteps": 16,
+  "culturalInfo": {
+    "ko": {
+      "summary": "그리오(Griot, 음악인 가문)를 위한 신성한 리듬. 그들에게 경의를 표한다.",
+      "history": "서아프리카의 그리오는 대대로 가문의 역사와 전통을 노래로 전승하는 음유시인이다. Lamba는 그들을 위한 헌정 리듬으로, 일반인은 함부로 연주하지 못한다.",
+      "occasion": "그리오 가문 행사, 코라(Kora) 연주 동반, 결혼식 입장",
+      "dance": "그리오가 노래하는 동안 다른 이들이 절제된 동작으로 화답하는 형태",
+      "famousArtists": ["Toumani Diabaté (Kora)", "Mamady Keïta", "Ballaké Sissoko"]
+    },
+    "en": {
+      "summary": "A sacred rhythm for the Griot (musician caste), expressing reverence for them.",
+      "history": "In West Africa, the Griots are bardic poets who transmit family history and tradition through song across generations. Lamba is a dedicatory rhythm for them — not casually played by laypeople.",
+      "occasion": "Griot family events, accompaniment to Kora playing, wedding processions",
+      "dance": "Others respond with restrained movements while a Griot sings",
+      "famousArtists": ["Toumani Diabaté (Kora)", "Mamady Keïta", "Ballaké Sissoko"]
+    }
+  },
+  "pattern": {
+    "lengthInBeats": 4,
+    "loopable": true,
+    "notes": [
+      { "step": 0,  "lane": "bass", "type": "tap" },
+      { "step": 1,  "lane": "tone", "type": "tap" },
+      { "step": 3,  "lane": "slap", "type": "tap" },
+      { "step": 4,  "lane": "tone", "type": "tap" },
+      { "step": 5,  "lane": "slap", "type": "tap" },
+      { "step": 7,  "lane": "tone", "type": "tap" },
+      { "step": 8,  "lane": "bass", "type": "tap" },
+      { "step": 9,  "lane": "tone", "type": "tap" },
+      { "step": 11, "lane": "slap", "type": "tap" },
+      { "step": 12, "lane": "tone", "type": "tap" },
+      { "step": 13, "lane": "slap", "type": "tap" },
+      { "step": 15, "lane": "tone", "type": "tap" }
+    ]
+  },
+  "variations": [
+    {
+      "id": "lamba_basic",
+      "name": { "ko": "기본형", "en": "Basic" },
+      "stars": 8,
+      "patternRef": "default"
+    },
+    {
+      "id": "lamba_griot",
+      "name": { "ko": "그리오 헌정", "en": "Griot Dedication" },
+      "stars": 10,
+      "notes": [
+        { "step": 0,  "lane": "bass", "type": "tap" },
+        { "step": 1,  "lane": "tone", "type": "tap" },
+        { "step": 2,  "lane": "slap", "type": "tap" },
+        { "step": 3,  "lane": "slap", "type": "tap" },
+        { "step": 4,  "lane": "tone", "type": "tap" },
+        { "step": 5,  "lane": "slap", "type": "tap" },
+        { "step": 6,  "lane": "tone", "type": "tap" },
+        { "step": 7,  "lane": "tone", "type": "tap" },
+        { "step": 8,  "lane": "bass", "type": "tap" },
+        { "step": 9,  "lane": "tone", "type": "tap" },
+        { "step": 10, "lane": "slap", "type": "tap" },
+        { "step": 11, "lane": "slap", "type": "tap" },
+        { "step": 12, "lane": "tone", "type": "tap" },
+        { "step": 13, "lane": "slap", "type": "tap" },
+        { "step": 14, "lane": "tone", "type": "tap" },
+        { "step": 15, "lane": "tone", "type": "tap" }
+      ]
+    }
+  ],
+  "tips": {
+    "ko": [
+      "복잡한 패턴이지만 8박을 기준으로 둘로 나누면 좌우 대칭입니다",
+      "Slap-Tone 연속 부분의 손목 회전이 핵심입니다",
+      "이 리듬을 존중하는 마음으로 연주하세요"
+    ],
+    "en": [
+      "Complex but symmetrical when split into two 8-beat halves",
+      "Wrist rotation on the Slap-Tone succession is key",
+      "Play this rhythm with reverence"
+    ]
+  }
+}

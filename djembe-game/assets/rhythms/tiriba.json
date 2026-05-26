@@ -1,0 +1,88 @@
+{
+  "id": "tiriba",
+  "name": { "ko": "티리바", "en": "Tiriba" },
+  "alternativeNames": ["Tiribah"],
+  "region": "guinea",
+  "ethnicGroup": "Landuma, Nalou",
+  "purposes": ["celebration", "initiation"],
+  "stars": 5,
+  "tier": "intermediate",
+  "baseBpm": 120,
+  "bpmRange": { "min": 95, "max": 160 },
+  "beats": 4,
+  "subdivisions": 4,
+  "totalSteps": 16,
+  "culturalInfo": {
+    "ko": {
+      "summary": "기니 해안의 청년 통과의례 마지막 단계에서 연주되는 환희의 리듬.",
+      "history": "란두마족과 날루족이 청년의 성인이 됨을 마을 전체에 알리는 의식에서 사용한다. 격렬한 춤과 함께 마을 전체가 흥분의 도가니가 된다.",
+      "occasion": "성인식 완료, 가면 가장 행렬, 큰 마을 축제",
+      "dance": "젊은 남자들이 도약하며 추는 활기찬 춤. 가면을 쓰기도 한다",
+      "famousArtists": ["Famoudou Konaté", "M'Bemba Bangoura"]
+    },
+    "en": {
+      "summary": "A rhythm of jubilation performed at the final stage of youth initiation in coastal Guinea.",
+      "history": "Used by the Landuma and Nalou peoples to announce a young person's coming of age to the entire village. Vigorous dancing accompanies a village-wide frenzy.",
+      "occasion": "Completion of coming-of-age ceremony, masquerade processions, major village festivals",
+      "dance": "Vigorous leaping dance by young men, sometimes wearing masks",
+      "famousArtists": ["Famoudou Konaté", "M'Bemba Bangoura"]
+    }
+  },
+  "pattern": {
+    "lengthInBeats": 4,
+    "loopable": true,
+    "notes": [
+      { "step": 0,  "lane": "bass", "type": "tap" },
+      { "step": 1,  "lane": "tone", "type": "tap" },
+      { "step": 2,  "lane": "slap", "type": "tap" },
+      { "step": 3,  "lane": "tone", "type": "tap" },
+      { "step": 4,  "lane": "bass", "type": "tap" },
+      { "step": 5,  "lane": "tone", "type": "tap" },
+      { "step": 6,  "lane": "slap", "type": "tap" },
+      { "step": 7,  "lane": "tone", "type": "tap" },
+      { "step": 8,  "lane": "bass", "type": "tap" },
+      { "step": 9,  "lane": "tone", "type": "tap" },
+      { "step": 10, "lane": "slap", "type": "tap" },
+      { "step": 11, "lane": "tone", "type": "tap" },
+      { "step": 12, "lane": "bass", "type": "tap" },
+      { "step": 13, "lane": "tone", "type": "tap" },
+      { "step": 14, "lane": "slap", "type": "tap" },
+      { "step": 15, "lane": "tone", "type": "tap" }
+    ]
+  },
+  "variations": [
+    {
+      "id": "tiriba_basic",
+      "name": { "ko": "기본형", "en": "Basic" },
+      "stars": 5,
+      "patternRef": "default"
+    },
+    {
+      "id": "tiriba_simplified",
+      "name": { "ko": "단순화", "en": "Simplified" },
+      "stars": 3,
+      "notes": [
+        { "step": 0,  "lane": "bass", "type": "tap" },
+        { "step": 2,  "lane": "slap", "type": "tap" },
+        { "step": 4,  "lane": "bass", "type": "tap" },
+        { "step": 6,  "lane": "slap", "type": "tap" },
+        { "step": 8,  "lane": "bass", "type": "tap" },
+        { "step": 10, "lane": "slap", "type": "tap" },
+        { "step": 12, "lane": "bass", "type": "tap" },
+        { "step": 14, "lane": "slap", "type": "tap" }
+      ]
+    }
+  ],
+  "tips": {
+    "ko": [
+      "16스텝 모두를 채우는 빠른 패턴입니다. 양손 교대를 정확히 하세요",
+      "B-T-S-T 4스텝을 4번 반복한다는 점을 인식하면 쉬워집니다",
+      "BPM 90 이하에서 시작해 점진적으로 올리세요"
+    ],
+    "en": [
+      "A fast pattern filling all 16 steps. Alternate hands precisely",
+      "It becomes easier when you recognize B-T-S-T 4-step pattern repeated 4 times",
+      "Start under BPM 90 and gradually increase"
+    ]
+  }
+}

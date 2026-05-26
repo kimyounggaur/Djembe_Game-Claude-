@@ -1,0 +1,96 @@
+{
+  "id": "sofa",
+  "name": { "ko": "소파", "en": "Sofa" },
+  "alternativeNames": ["Sofas"],
+  "region": "mali",
+  "ethnicGroup": "Bambara, Malinké",
+  "purposes": ["warrior"],
+  "stars": 7,
+  "tier": "intermediate",
+  "baseBpm": 130,
+  "bpmRange": { "min": 110, "max": 170 },
+  "beats": 4,
+  "subdivisions": 4,
+  "totalSteps": 16,
+  "culturalInfo": {
+    "ko": {
+      "summary": "말리 제국의 황실 기마병 '소파'를 위한 리듬. 군대의 위용을 노래한다.",
+      "history": "13세기 말리 제국 시기 황제의 친위 기마부대를 '소파(Sofa)'라 불렀다. 그들의 출정과 귀환을 알리는 이 리듬은 오늘날에도 말리의 자긍심을 상징한다.",
+      "occasion": "국가적 행사, 전통 무용 공연, 의식적 행렬",
+      "dance": "기마병의 동작을 본뜬 절도 있는 군무. 검을 든 듯한 손동작",
+      "famousArtists": ["Adama Dramé", "Ablaye Cissoko"]
+    },
+    "en": {
+      "summary": "A rhythm for the 'Sofa' — royal cavalrymen of the Mali Empire. Sings of military glory.",
+      "history": "In 13th century Mali Empire, the emperor's elite mounted guard were called 'Sofa'. This rhythm announced their march and return, and today still symbolizes Malian pride.",
+      "occasion": "National events, traditional dance performances, ceremonial processions",
+      "dance": "Disciplined group dance mimicking horsemen, with sword-like hand motions",
+      "famousArtists": ["Adama Dramé", "Ablaye Cissoko"]
+    }
+  },
+  "pattern": {
+    "lengthInBeats": 4,
+    "loopable": true,
+    "notes": [
+      { "step": 0,  "lane": "bass", "type": "tap" },
+      { "step": 1,  "lane": "tone", "type": "tap" },
+      { "step": 2,  "lane": "slap", "type": "tap" },
+      { "step": 3,  "lane": "tone", "type": "tap" },
+      { "step": 4,  "lane": "bass", "type": "tap" },
+      { "step": 5,  "lane": "tone", "type": "tap" },
+      { "step": 6,  "lane": "slap", "type": "tap" },
+      { "step": 7,  "lane": "tone", "type": "tap" },
+      { "step": 8,  "lane": "bass", "type": "tap" },
+      { "step": 9,  "lane": "tone", "type": "tap" },
+      { "step": 10, "lane": "slap", "type": "tap" },
+      { "step": 11, "lane": "tone", "type": "tap" },
+      { "step": 12, "lane": "bass", "type": "tap" },
+      { "step": 13, "lane": "tone", "type": "tap" },
+      { "step": 14, "lane": "slap", "type": "tap" },
+      { "step": 15, "lane": "tone", "type": "tap" }
+    ]
+  },
+  "variations": [
+    {
+      "id": "sofa_basic",
+      "name": { "ko": "기본형", "en": "Basic" },
+      "stars": 7,
+      "patternRef": "default"
+    },
+    {
+      "id": "sofa_advanced",
+      "name": { "ko": "고급 (격렬)", "en": "Advanced (Fierce)" },
+      "stars": 10,
+      "notes": [
+        { "step": 0,  "lane": "bass", "type": "tap" },
+        { "step": 1,  "lane": "bass", "type": "tap" },
+        { "step": 2,  "lane": "slap", "type": "tap" },
+        { "step": 3,  "lane": "slap", "type": "tap" },
+        { "step": 4,  "lane": "tone", "type": "tap" },
+        { "step": 5,  "lane": "tone", "type": "tap" },
+        { "step": 6,  "lane": "slap", "type": "tap" },
+        { "step": 7,  "lane": "tone", "type": "tap" },
+        { "step": 8,  "lane": "bass", "type": "tap" },
+        { "step": 9,  "lane": "bass", "type": "tap" },
+        { "step": 10, "lane": "slap", "type": "tap" },
+        { "step": 11, "lane": "slap", "type": "tap" },
+        { "step": 12, "lane": "tone", "type": "tap" },
+        { "step": 13, "lane": "tone", "type": "tap" },
+        { "step": 14, "lane": "slap", "type": "tap" },
+        { "step": 15, "lane": "tone", "type": "tap" }
+      ]
+    }
+  ],
+  "tips": {
+    "ko": [
+      "Tiriba와 같은 16스텝 패턴이지만 BPM이 훨씬 빠릅니다",
+      "양손 교대를 명확히 하지 않으면 무너지기 쉽습니다",
+      "BPM 100에서 시작해 매주 5씩 올리는 연습을 추천합니다"
+    ],
+    "en": [
+      "Same 16-step pattern as Tiriba but much faster",
+      "Without clear hand alternation, it collapses easily",
+      "Recommend starting at BPM 100 and increasing by 5 each week"
+    ]
+  }
+}

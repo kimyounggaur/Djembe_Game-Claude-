@@ -7,6 +7,7 @@ import { AssetLoader } from './AssetLoader.js';
 import { InputManager } from './InputManager.js';
 import { SceneManager } from './SceneManager.js';
 import { ChartLoader } from '../game/ChartLoader.js';
+import { RhythmLoader } from '../game/RhythmLoader.js';
 import { Storage } from '../utils/Storage.js';
 import { i18n } from '../utils/i18n.js';
 import { Theme } from '../ui/Theme.js';
@@ -22,6 +23,14 @@ import { CalibrationScene } from '../scenes/CalibrationScene.js';
 import { TutorialScene } from '../scenes/TutorialScene.js';
 import { AchievementScene } from '../scenes/AchievementScene.js';
 import { AboutScene } from '../scenes/AboutScene.js';
+import { RhythmLibraryScene } from '../scenes/RhythmLibraryScene.js';
+import { RhythmDetailScene } from '../scenes/RhythmDetailScene.js';
+import { RhythmLoopScene } from '../scenes/RhythmLoopScene.js';
+import { RhythmLearnScene } from '../scenes/RhythmLearnScene.js';
+import { RhythmEncyclopediaScene } from '../scenes/RhythmEncyclopediaScene.js';
+import { MedleyMenuScene } from '../scenes/MedleyMenuScene.js';
+import { CustomMedleyScene } from '../scenes/CustomMedleyScene.js';
+import { StatsScene } from '../scenes/StatsScene.js';
 
 const FALLBACK_SONGS = [
   {
@@ -73,6 +82,7 @@ export class GameApp {
     this.inputManager = new InputManager(this.audioEngine, this.settings);
     this.sceneManager = new SceneManager();
     this.chartLoader = new ChartLoader();
+    this.rhythmLoader = new RhythmLoader();
     this.songsFallback = FALLBACK_SONGS;
     this.konamiSeq = [];
     this.konamiTarget = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'KeyB', 'KeyA'];
@@ -130,6 +140,14 @@ export class GameApp {
     this.sceneManager.register('tutorial', new TutorialScene(this));
     this.sceneManager.register('achievements', new AchievementScene(this));
     this.sceneManager.register('about', new AboutScene(this));
+    this.sceneManager.register('rhythmLibrary', new RhythmLibraryScene(this));
+    this.sceneManager.register('rhythmDetail', new RhythmDetailScene(this));
+    this.sceneManager.register('rhythmLoop', new RhythmLoopScene(this));
+    this.sceneManager.register('rhythmLearn', new RhythmLearnScene(this));
+    this.sceneManager.register('rhythmEncyclopedia', new RhythmEncyclopediaScene(this));
+    this.sceneManager.register('medleyMenu', new MedleyMenuScene(this));
+    this.sceneManager.register('customMedley', new CustomMedleyScene(this));
+    this.sceneManager.register('stats', new StatsScene(this));
     this.sceneManager.goTo('loading', null, { skipTransition: true });
   }
 

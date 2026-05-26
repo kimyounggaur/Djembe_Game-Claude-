@@ -1,0 +1,84 @@
+{
+  "id": "kassa",
+  "name": { "ko": "카사", "en": "Kassa" },
+  "alternativeNames": ["Kasa"],
+  "region": "mali",
+  "ethnicGroup": "Malinké, Bambara",
+  "purposes": ["labor", "celebration"],
+  "stars": 5,
+  "tier": "intermediate",
+  "baseBpm": 115,
+  "bpmRange": { "min": 95, "max": 150 },
+  "beats": 4,
+  "subdivisions": 4,
+  "totalSteps": 16,
+  "culturalInfo": {
+    "ko": {
+      "summary": "추수기 농부들의 활기찬 노동요이자 풍년을 축하하는 리듬.",
+      "history": "말리의 사바나 지역에서 농부들이 협동 작업을 할 때 부르던 노래에서 발달했다. 일이 끝난 후에는 같은 리듬으로 흥겨운 잔치를 벌인다.",
+      "occasion": "추수, 농작물 운반, 풍년 축제",
+      "dance": "농기구를 휘두르는 동작에서 영감을 받은 활발한 군무",
+      "famousArtists": ["Adama Dramé", "Mamady Keïta"]
+    },
+    "en": {
+      "summary": "A lively work rhythm of harvest-season farmers, also celebrating a good harvest.",
+      "history": "Developed from songs sung by farmers doing cooperative work in the savanna regions of Mali. The same rhythm becomes a joyful feast after work is done.",
+      "occasion": "Harvest, transporting crops, harvest festivals",
+      "dance": "Energetic group dance inspired by motions of swinging farm tools",
+      "famousArtists": ["Adama Dramé", "Mamady Keïta"]
+    }
+  },
+  "pattern": {
+    "lengthInBeats": 4,
+    "loopable": true,
+    "notes": [
+      { "step": 0,  "lane": "bass", "type": "tap" },
+      { "step": 2,  "lane": "tone", "type": "tap" },
+      { "step": 4,  "lane": "slap", "type": "tap" },
+      { "step": 6,  "lane": "tone", "type": "tap" },
+      { "step": 8,  "lane": "bass", "type": "tap" },
+      { "step": 10, "lane": "tone", "type": "tap" },
+      { "step": 12, "lane": "slap", "type": "tap" },
+      { "step": 14, "lane": "tone", "type": "tap" }
+    ]
+  },
+  "variations": [
+    {
+      "id": "kassa_basic",
+      "name": { "ko": "기본형", "en": "Basic" },
+      "stars": 5,
+      "patternRef": "default"
+    },
+    {
+      "id": "kassa_intermediate",
+      "name": { "ko": "중급", "en": "Intermediate" },
+      "stars": 7,
+      "notes": [
+        { "step": 0,  "lane": "bass", "type": "tap" },
+        { "step": 2,  "lane": "tone", "type": "tap" },
+        { "step": 3,  "lane": "tone", "type": "tap" },
+        { "step": 4,  "lane": "slap", "type": "tap" },
+        { "step": 6,  "lane": "tone", "type": "tap" },
+        { "step": 7,  "lane": "tone", "type": "tap" },
+        { "step": 8,  "lane": "bass", "type": "tap" },
+        { "step": 10, "lane": "tone", "type": "tap" },
+        { "step": 11, "lane": "tone", "type": "tap" },
+        { "step": 12, "lane": "slap", "type": "tap" },
+        { "step": 14, "lane": "tone", "type": "tap" },
+        { "step": 15, "lane": "tone", "type": "tap" }
+      ]
+    }
+  ],
+  "tips": {
+    "ko": [
+      "Sunu와 비슷하지만 BPM이 더 빠르고 에너지 넘칩니다",
+      "톤을 가볍게 연달아 치는 부분에 그루브의 비밀이 있습니다",
+      "노동요답게 호흡을 맞춰가며 일정하게 유지하세요"
+    ],
+    "en": [
+      "Similar to Sunu but faster and more energetic",
+      "The secret of groove lies in the rapid succession of light tones",
+      "Like a work song, keep it steady with breathing"
+    ]
+  }
+}

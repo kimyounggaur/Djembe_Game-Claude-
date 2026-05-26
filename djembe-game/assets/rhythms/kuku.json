@@ -1,0 +1,107 @@
+{
+  "id": "kuku",
+  "name": { "ko": "쿠쿠", "en": "Kuku" },
+  "alternativeNames": ["Cuku", "Kúkú"],
+  "region": "guinea",
+  "ethnicGroup": "Manian (Beyla, Nzérékoré 지역)",
+  "purposes": ["celebration"],
+  "stars": 2,
+  "tier": "beginner",
+  "baseBpm": 110,
+  "bpmRange": { "min": 80, "max": 160 },
+  "beats": 4,
+  "subdivisions": 4,
+  "totalSteps": 16,
+  "culturalInfo": {
+    "ko": {
+      "summary": "여인들이 강에서 고기잡이를 마치고 돌아오는 길에 추던 환영의 춤.",
+      "history": "기니 마니안족의 전통으로, 원래는 여성들만의 의식이었으나 오늘날 세계적으로 가장 사랑받는 젬베 리듬 중 하나가 되었다.",
+      "occasion": "결혼식, 축제 축하, 모든 종류의 축제",
+      "dance": "원을 그리며 박자에 맞춰 발을 구르고 어깨를 치는 형태",
+      "famousArtists": ["Famoudou Konaté", "Mamady Keïta"]
+    },
+    "en": {
+      "summary": "A welcome dance performed by women returning from fishing in the river.",
+      "history": "From the Manian people of Guinea, originally a women's ritual, today one of the most beloved djembe rhythms worldwide.",
+      "occasion": "Weddings, festival celebrations, all types of festivities",
+      "dance": "Dancers move in a circle, stomping feet and tapping shoulders to the beat",
+      "famousArtists": ["Famoudou Konaté", "Mamady Keïta"]
+    }
+  },
+  "pattern": {
+    "lengthInBeats": 4,
+    "loopable": true,
+    "notes": [
+      { "step": 0,  "lane": "bass", "type": "tap" },
+      { "step": 2,  "lane": "tone", "type": "tap" },
+      { "step": 4,  "lane": "tone", "type": "tap" },
+      { "step": 6,  "lane": "slap", "type": "tap" },
+      { "step": 8,  "lane": "bass", "type": "tap" },
+      { "step": 10, "lane": "tone", "type": "tap" },
+      { "step": 12, "lane": "tone", "type": "tap" },
+      { "step": 14, "lane": "slap", "type": "tap" }
+    ]
+  },
+  "variations": [
+    {
+      "id": "kuku_basic",
+      "name": { "ko": "기본형", "en": "Basic" },
+      "stars": 2,
+      "patternRef": "default"
+    },
+    {
+      "id": "kuku_intermediate",
+      "name": { "ko": "중급 변주", "en": "Intermediate Variation" },
+      "stars": 5,
+      "notes": [
+        { "step": 0,  "lane": "bass", "type": "tap" },
+        { "step": 2,  "lane": "tone", "type": "tap" },
+        { "step": 3,  "lane": "tone", "type": "tap" },
+        { "step": 4,  "lane": "tone", "type": "tap" },
+        { "step": 6,  "lane": "slap", "type": "tap" },
+        { "step": 7,  "lane": "slap", "type": "tap" },
+        { "step": 8,  "lane": "bass", "type": "tap" },
+        { "step": 10, "lane": "tone", "type": "tap" },
+        { "step": 11, "lane": "tone", "type": "tap" },
+        { "step": 12, "lane": "tone", "type": "tap" },
+        { "step": 14, "lane": "slap", "type": "tap" },
+        { "step": 15, "lane": "slap", "type": "tap" }
+      ]
+    },
+    {
+      "id": "kuku_advanced",
+      "name": { "ko": "고급 (Konaté 스타일)", "en": "Advanced (Konaté Style)" },
+      "stars": 8,
+      "notes": [
+        { "step": 0,  "lane": "bass", "type": "tap" },
+        { "step": 1,  "lane": "tone", "type": "tap" },
+        { "step": 2,  "lane": "tone", "type": "tap" },
+        { "step": 3,  "lane": "slap", "type": "tap" },
+        { "step": 4,  "lane": "tone", "type": "tap" },
+        { "step": 5,  "lane": "tone", "type": "tap" },
+        { "step": 6,  "lane": "slap", "type": "tap" },
+        { "step": 7,  "lane": "slap", "type": "tap" },
+        { "step": 8,  "lane": "bass", "type": "tap" },
+        { "step": 9,  "lane": "tone", "type": "tap" },
+        { "step": 10, "lane": "tone", "type": "tap" },
+        { "step": 11, "lane": "slap", "type": "tap" },
+        { "step": 12, "lane": "tone", "type": "tap" },
+        { "step": 13, "lane": "tone", "type": "tap" },
+        { "step": 14, "lane": "slap", "type": "tap" },
+        { "step": 15, "lane": "slap", "type": "tap" }
+      ]
+    }
+  ],
+  "tips": {
+    "ko": [
+      "베이스(B) - 톤(T) - 톤(T) - 슬랩(S) 패턴을 4박자로 반복합니다",
+      "첫 박의 베이스를 강하게 누르면 그루브가 살아납니다",
+      "느린 BPM(80~90)부터 시작해 점차 올리세요"
+    ],
+    "en": [
+      "Repeat the Bass(B) - Tone(T) - Tone(T) - Slap(S) pattern in 4 beats",
+      "Hit the bass on the first beat firmly to bring out the groove",
+      "Start with a slow BPM (80~90) and gradually speed up"
+    ]
+  }
+}

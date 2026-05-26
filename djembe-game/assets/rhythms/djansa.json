@@ -1,0 +1,92 @@
+{
+  "id": "djansa",
+  "name": { "ko": "잔사", "en": "Djansa" },
+  "alternativeNames": ["Diansa", "Jansa"],
+  "region": "mali",
+  "ethnicGroup": "Bambara (말리 남부)",
+  "purposes": ["celebration"],
+  "stars": 3,
+  "tier": "beginner",
+  "baseBpm": 100,
+  "bpmRange": { "min": 80, "max": 140 },
+  "beats": 4,
+  "subdivisions": 4,
+  "totalSteps": 16,
+  "culturalInfo": {
+    "ko": {
+      "summary": "말리 밤바라족의 축하 리듬. 추수 후 풍요로움을 나눌 때 연주된다.",
+      "history": "밤바라어로 '함께 즐기다'를 뜻한다. 마을 광장에서 남녀노소가 어우러져 춤추는 가장 보편적인 축하 리듬 중 하나.",
+      "occasion": "추수제, 마을 잔치, 가족 행사",
+      "dance": "원형으로 모여 차례로 가운데로 나와 즉흥적인 춤을 추는 형태",
+      "famousArtists": ["Adama Dramé", "Soungalo Coulibaly"]
+    },
+    "en": {
+      "summary": "A celebration rhythm of the Bambara people of Mali, played to share the abundance of harvest.",
+      "history": "Means 'joy together' in Bambara. One of the most universal celebration rhythms played in village squares where everyone — young and old — dances together.",
+      "occasion": "Harvest festivals, village feasts, family events",
+      "dance": "Dancers form a circle and take turns moving to the center for improvised dance",
+      "famousArtists": ["Adama Dramé", "Soungalo Coulibaly"]
+    }
+  },
+  "pattern": {
+    "lengthInBeats": 4,
+    "loopable": true,
+    "notes": [
+      { "step": 0,  "lane": "bass", "type": "tap" },
+      { "step": 1,  "lane": "tone", "type": "tap" },
+      { "step": 3,  "lane": "slap", "type": "tap" },
+      { "step": 4,  "lane": "bass", "type": "tap" },
+      { "step": 5,  "lane": "tone", "type": "tap" },
+      { "step": 7,  "lane": "slap", "type": "tap" },
+      { "step": 8,  "lane": "bass", "type": "tap" },
+      { "step": 9,  "lane": "tone", "type": "tap" },
+      { "step": 11, "lane": "slap", "type": "tap" },
+      { "step": 12, "lane": "bass", "type": "tap" },
+      { "step": 13, "lane": "tone", "type": "tap" },
+      { "step": 15, "lane": "slap", "type": "tap" }
+    ]
+  },
+  "variations": [
+    {
+      "id": "djansa_basic",
+      "name": { "ko": "기본형", "en": "Basic" },
+      "stars": 3,
+      "patternRef": "default"
+    },
+    {
+      "id": "djansa_advanced",
+      "name": { "ko": "고급 변주", "en": "Advanced Variation" },
+      "stars": 7,
+      "notes": [
+        { "step": 0,  "lane": "bass", "type": "tap" },
+        { "step": 1,  "lane": "tone", "type": "tap" },
+        { "step": 2,  "lane": "tone", "type": "tap" },
+        { "step": 3,  "lane": "slap", "type": "tap" },
+        { "step": 4,  "lane": "bass", "type": "tap" },
+        { "step": 5,  "lane": "tone", "type": "tap" },
+        { "step": 6,  "lane": "slap", "type": "tap" },
+        { "step": 7,  "lane": "slap", "type": "tap" },
+        { "step": 8,  "lane": "bass", "type": "tap" },
+        { "step": 9,  "lane": "tone", "type": "tap" },
+        { "step": 10, "lane": "tone", "type": "tap" },
+        { "step": 11, "lane": "slap", "type": "tap" },
+        { "step": 12, "lane": "bass", "type": "tap" },
+        { "step": 13, "lane": "tone", "type": "tap" },
+        { "step": 14, "lane": "slap", "type": "tap" },
+        { "step": 15, "lane": "slap", "type": "tap" }
+      ]
+    }
+  ],
+  "tips": {
+    "ko": [
+      "B-T-쉼-S 패턴을 4번 반복하는 구조입니다",
+      "톤(T)을 가볍게 터치하듯 치면 경쾌한 느낌이 살아납니다",
+      "1박과 5박, 9박, 13박의 베이스를 강조하세요"
+    ],
+    "en": [
+      "Structure: B-T-rest-S pattern repeated 4 times",
+      "Touch the tones lightly for a lively feel",
+      "Emphasize the bass on beats 1, 5, 9, and 13"
+    ]
+  }
+}

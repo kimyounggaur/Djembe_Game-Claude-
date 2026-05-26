@@ -1,0 +1,80 @@
+{
+  "id": "soli",
+  "name": { "ko": "솔리", "en": "Soli" },
+  "alternativeNames": ["Soli des Manians", "Soli lent"],
+  "region": "guinea",
+  "ethnicGroup": "Malinké, Manian",
+  "purposes": ["initiation", "ritual"],
+  "stars": 3,
+  "tier": "beginner",
+  "baseBpm": 95,
+  "bpmRange": { "min": 70, "max": 130 },
+  "beats": 4,
+  "subdivisions": 4,
+  "totalSteps": 16,
+  "culturalInfo": {
+    "ko": {
+      "summary": "젊은이들의 할례식과 성년식에서 연주되는 신성한 리듬.",
+      "history": "기니의 말링케족과 마니안족이 청소년들을 성인으로 인도하는 의식에서 사용해왔다. 가족과 마을 전체가 모여 새로운 세대의 탄생을 축하한다.",
+      "occasion": "성년식, 할례식, 통과 의례",
+      "dance": "엄숙한 분위기의 원형 춤. 어른들이 청소년을 둘러싸고 춤춘다",
+      "famousArtists": ["Mamady Keïta", "Famoudou Konaté"]
+    },
+    "en": {
+      "summary": "A sacred rhythm performed at circumcision and initiation ceremonies for youth.",
+      "history": "Used by the Malinké and Manian peoples of Guinea in ceremonies guiding adolescents into adulthood. Families and entire villages gather to celebrate a new generation.",
+      "occasion": "Initiation ceremonies, circumcision rites, rites of passage",
+      "dance": "Solemn circular dance where elders surround and dance with the youth",
+      "famousArtists": ["Mamady Keïta", "Famoudou Konaté"]
+    }
+  },
+  "pattern": {
+    "lengthInBeats": 4,
+    "loopable": true,
+    "notes": [
+      { "step": 0,  "lane": "bass", "type": "tap" },
+      { "step": 3,  "lane": "tone", "type": "tap" },
+      { "step": 6,  "lane": "slap", "type": "tap" },
+      { "step": 8,  "lane": "bass", "type": "tap" },
+      { "step": 11, "lane": "tone", "type": "tap" },
+      { "step": 14, "lane": "slap", "type": "tap" }
+    ]
+  },
+  "variations": [
+    {
+      "id": "soli_basic",
+      "name": { "ko": "기본형", "en": "Basic" },
+      "stars": 3,
+      "patternRef": "default"
+    },
+    {
+      "id": "soli_advanced",
+      "name": { "ko": "고급", "en": "Advanced" },
+      "stars": 7,
+      "notes": [
+        { "step": 0,  "lane": "bass", "type": "tap" },
+        { "step": 2,  "lane": "tone", "type": "tap" },
+        { "step": 3,  "lane": "tone", "type": "tap" },
+        { "step": 5,  "lane": "slap", "type": "tap" },
+        { "step": 6,  "lane": "slap", "type": "tap" },
+        { "step": 8,  "lane": "bass", "type": "tap" },
+        { "step": 10, "lane": "tone", "type": "tap" },
+        { "step": 11, "lane": "tone", "type": "tap" },
+        { "step": 13, "lane": "slap", "type": "tap" },
+        { "step": 14, "lane": "slap", "type": "tap" }
+      ]
+    }
+  ],
+  "tips": {
+    "ko": [
+      "음표 사이의 공백을 충분히 두어 엄숙한 느낌을 살리세요",
+      "베이스는 깊고 묵직하게, 슬랩은 날카롭게 대비를 만드세요",
+      "전체적으로 천천히 연주하며 호흡을 깊게 가지세요"
+    ],
+    "en": [
+      "Leave enough space between notes to maintain the solemn feel",
+      "Make the bass deep and heavy, contrasted with sharp slaps",
+      "Play slowly throughout and breathe deeply"
+    ]
+  }
+}

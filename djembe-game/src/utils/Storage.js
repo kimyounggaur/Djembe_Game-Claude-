@@ -8,7 +8,12 @@ const KEY = {
   ACHIEVEMENTS: 'djembe_achievements',
   UNLOCKS: 'djembe_unlocks',
   ONBOARDING: 'djembe_onboarded',
-  STATS: 'djembe_stats'
+  STATS: 'djembe_stats',
+  RHYTHM_SCORES: 'djembe_rhythm_scores',
+  RHYTHM_ENCYCLOPEDIA: 'djembe_rhythm_encyclopedia',
+  CUSTOM_MEDLEYS: 'djembe_custom_medleys',
+  MEDLEY_SCORES: 'djembe_medley_scores',
+  RHYTHM_ONBOARDED: 'djembe_rhythm_onboarded'
 };
 
 const DEFAULT_SETTINGS = {
@@ -130,6 +135,97 @@ const Storage = {
       }
     }
     this.save(KEY.STATS, s);
+  },
+  getRhythmScores() {
+    return this.load(KEY.RHYTHM_SCORES, {});
+  },
+  getRhythmScore(rhythmId) {
+    const all = this.getRhythmScores();
+    return all[rhythmId] || null;
+  },
+  saveRhythmScore(rhythmId, result) {
+    const all = this.getRhythmScores();
+    const prev = all[rhythmId] || {
+      highScore: 0, bestGrade: 'D', fullCombo: false, mastered: false,
+      playCount: 0, maxBpm: 0, avgAccuracy: 0, totalAccuracy: 0
+    };
+    const playCount = prev.playCount + 1;
+    const accuracy = result.accuracy != null ? result.accuracy : 0;
+    const totalAccuracy = (prev.totalAccuracy || 0) + accuracy;
+    const isNew = (result.score || 0) > prev.highScore;
+    all[rhythmId] = {
+      highScore: Math.max(prev.highScore, result.score || 0),
+      bestGrade: gradeMax(prev.bestGrade, result.grade || 'D'),
+      fullCombo: prev.fullCombo || !!result.fullCombo,
+      mastered: prev.mastered || !!result.mastered,
+      playCount,
+      maxBpm: Math.max(prev.maxBpm || 0, result.maxBpm || 0),
+      totalAccuracy,
+      avgAccuracy: totalAccuracy / playCount,
+      lastPlayed: Date.now()
+    };
+    this.save(KEY.RHYTHM_SCORES, all);
+    return { isNew, score: all[rhythmId] };
+  },
+  setRhythmMastered(rhythmId, value = true) {
+    const all = this.getRhythmScores();
+    if (!all[rhythmId]) all[rhythmId] = {
+      highScore: 0, bestGrade: 'D', fullCombo: false, mastered: false,
+      playCount: 0, maxBpm: 0, avgAccuracy: 0, totalAccuracy: 0
+    };
+    all[rhythmId].mastered = value;
+    this.save(KEY.RHYTHM_SCORES, all);
+  },
+  getEncyclopediaRead() {
+    return this.load(KEY.RHYTHM_ENCYCLOPEDIA, {});
+  },
+  markEncyclopediaRead(sectionId) {
+    const read = this.getEncyclopediaRead();
+    if (read[sectionId]) return false;
+    read[sectionId] = { date: Date.now() };
+    this.save(KEY.RHYTHM_ENCYCLOPEDIA, read);
+    return true;
+  },
+  getCustomMedleys() {
+    return this.load(KEY.CUSTOM_MEDLEYS, []);
+  },
+  saveCustomMedley(medley) {
+    const list = this.getCustomMedleys();
+    const existingIdx = list.findIndex(m => m.id === medley.id);
+    if (existingIdx >= 0) list[existingIdx] = medley;
+    else list.push({ ...medley, createdAt: Date.now() });
+    if (list.length > 10) list.shift();
+    this.save(KEY.CUSTOM_MEDLEYS, list);
+    return list;
+  },
+  deleteCustomMedley(id) {
+    const list = this.getCustomMedleys().filter(m => m.id !== id);
+    this.save(KEY.CUSTOM_MEDLEYS, list);
+  },
+  getMedleyScores() {
+    return this.load(KEY.MEDLEY_SCORES, {});
+  },
+  saveMedleyScore(medleyId, result) {
+    const all = this.getMedleyScores();
+    const prev = all[medleyId] || { topScores: [], playCount: 0 };
+    const entry = {
+      score: result.score || 0,
+      grade: result.grade || 'D',
+      accuracy: result.accuracy || 0,
+      name: result.name || 'Anon',
+      date: Date.now()
+    };
+    prev.topScores = [...prev.topScores, entry].sort((a, b) => b.score - a.score).slice(0, 5);
+    prev.playCount += 1;
+    all[medleyId] = prev;
+    this.save(KEY.MEDLEY_SCORES, all);
+    return prev;
+  },
+  isRhythmOnboarded() {
+    return this.load(KEY.RHYTHM_ONBOARDED, false);
+  },
+  markRhythmOnboarded() {
+    this.save(KEY.RHYTHM_ONBOARDED, true);
   },
   resetAll() {
     Object.values(KEY).forEach(k => localStorage.removeItem(k));

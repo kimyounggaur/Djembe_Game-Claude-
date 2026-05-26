@@ -1,0 +1,84 @@
+{
+  "id": "sunu",
+  "name": { "ko": "수누", "en": "Sunu" },
+  "alternativeNames": ["Sounou"],
+  "region": "mali",
+  "ethnicGroup": "Khassonké (말리 카예 지역)",
+  "purposes": ["courtship", "celebration"],
+  "stars": 4,
+  "tier": "intermediate",
+  "baseBpm": 105,
+  "bpmRange": { "min": 85, "max": 145 },
+  "beats": 4,
+  "subdivisions": 4,
+  "totalSteps": 16,
+  "culturalInfo": {
+    "ko": {
+      "summary": "결혼식에서 신랑신부와 손님들이 함께 춤추는 우아한 리듬.",
+      "history": "말리 북서부 카예 지역의 카송케족 결혼식 리듬으로 시작했다. 신부의 행복과 새 가정의 번영을 기원하는 의미를 담는다.",
+      "occasion": "결혼식, 약혼식, 청춘남녀의 만남",
+      "dance": "남녀가 짝을 이뤄 우아하게 회전하며 추는 춤",
+      "famousArtists": ["Mamady Keïta", "Drissa Kone"]
+    },
+    "en": {
+      "summary": "An elegant rhythm where bride, groom, and guests dance together at weddings.",
+      "history": "Originated as a wedding rhythm of the Khassonké people in the Kayes region of northwestern Mali. Wishes happiness for the bride and prosperity for the new family.",
+      "occasion": "Weddings, engagement ceremonies, meetings between young men and women",
+      "dance": "Couples turn gracefully together",
+      "famousArtists": ["Mamady Keïta", "Drissa Kone"]
+    }
+  },
+  "pattern": {
+    "lengthInBeats": 4,
+    "loopable": true,
+    "notes": [
+      { "step": 0,  "lane": "bass", "type": "tap" },
+      { "step": 2,  "lane": "tone", "type": "tap" },
+      { "step": 4,  "lane": "slap", "type": "tap" },
+      { "step": 6,  "lane": "tone", "type": "tap" },
+      { "step": 8,  "lane": "bass", "type": "tap" },
+      { "step": 10, "lane": "tone", "type": "tap" },
+      { "step": 12, "lane": "slap", "type": "tap" },
+      { "step": 14, "lane": "tone", "type": "tap" }
+    ]
+  },
+  "variations": [
+    {
+      "id": "sunu_basic",
+      "name": { "ko": "기본형", "en": "Basic" },
+      "stars": 4,
+      "patternRef": "default"
+    },
+    {
+      "id": "sunu_advanced",
+      "name": { "ko": "고급", "en": "Advanced" },
+      "stars": 8,
+      "notes": [
+        { "step": 0,  "lane": "bass", "type": "tap" },
+        { "step": 2,  "lane": "tone", "type": "tap" },
+        { "step": 3,  "lane": "tone", "type": "tap" },
+        { "step": 4,  "lane": "slap", "type": "tap" },
+        { "step": 6,  "lane": "tone", "type": "tap" },
+        { "step": 7,  "lane": "slap", "type": "tap" },
+        { "step": 8,  "lane": "bass", "type": "tap" },
+        { "step": 10, "lane": "tone", "type": "tap" },
+        { "step": 11, "lane": "tone", "type": "tap" },
+        { "step": 12, "lane": "slap", "type": "tap" },
+        { "step": 14, "lane": "tone", "type": "tap" },
+        { "step": 15, "lane": "slap", "type": "tap" }
+      ]
+    }
+  ],
+  "tips": {
+    "ko": [
+      "B-T-S-T 패턴의 우아한 흐름을 느껴보세요",
+      "톤(T)을 부드럽게 연결하듯 치면 결혼식의 분위기가 살아납니다",
+      "두 번째 박의 슬랩(S)에 살짝 강세를 주세요"
+    ],
+    "en": [
+      "Feel the elegant flow of the B-T-S-T pattern",
+      "Connect the tones smoothly to evoke the wedding atmosphere",
+      "Add a slight accent on the slap of the second beat"
+    ]
+  }
+}

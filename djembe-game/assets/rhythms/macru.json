@@ -1,0 +1,84 @@
+{
+  "id": "macru",
+  "name": { "ko": "마크루", "en": "Macru" },
+  "alternativeNames": ["Mackru", "Makuru"],
+  "region": "guinea",
+  "ethnicGroup": "Malinké",
+  "purposes": ["labor"],
+  "stars": 4,
+  "tier": "intermediate",
+  "baseBpm": 100,
+  "bpmRange": { "min": 80, "max": 140 },
+  "beats": 4,
+  "subdivisions": 4,
+  "totalSteps": 16,
+  "culturalInfo": {
+    "ko": {
+      "summary": "어부들이 그물을 던지고 끌어올릴 때 호흡을 맞추기 위해 연주하던 노동요.",
+      "history": "기니 해안가의 어업 공동체에서 발달했다. 단조로운 노동을 활기차게 만들고 협동심을 키우는 역할을 했다.",
+      "occasion": "어로 작업, 마을 노동, 공동 작업",
+      "dance": "그물을 당기는 동작을 본뜬 단체 동작 춤",
+      "famousArtists": ["Famoudou Konaté"]
+    },
+    "en": {
+      "summary": "A work rhythm fishermen played to synchronize their breathing while casting and pulling nets.",
+      "history": "Developed in fishing communities along the Guinean coast. Made monotonous labor lively and fostered cooperation.",
+      "occasion": "Fishing, village labor, communal work",
+      "dance": "Group dance imitating the motion of pulling nets",
+      "famousArtists": ["Famoudou Konaté"]
+    }
+  },
+  "pattern": {
+    "lengthInBeats": 4,
+    "loopable": true,
+    "notes": [
+      { "step": 0,  "lane": "bass", "type": "tap" },
+      { "step": 3,  "lane": "tone", "type": "tap" },
+      { "step": 4,  "lane": "slap", "type": "tap" },
+      { "step": 6,  "lane": "tone", "type": "tap" },
+      { "step": 8,  "lane": "bass", "type": "tap" },
+      { "step": 11, "lane": "tone", "type": "tap" },
+      { "step": 12, "lane": "slap", "type": "tap" },
+      { "step": 14, "lane": "tone", "type": "tap" }
+    ]
+  },
+  "variations": [
+    {
+      "id": "macru_basic",
+      "name": { "ko": "기본형", "en": "Basic" },
+      "stars": 4,
+      "patternRef": "default"
+    },
+    {
+      "id": "macru_advanced",
+      "name": { "ko": "고급", "en": "Advanced" },
+      "stars": 8,
+      "notes": [
+        { "step": 0,  "lane": "bass", "type": "tap" },
+        { "step": 2,  "lane": "tone", "type": "tap" },
+        { "step": 3,  "lane": "tone", "type": "tap" },
+        { "step": 4,  "lane": "slap", "type": "tap" },
+        { "step": 5,  "lane": "slap", "type": "tap" },
+        { "step": 6,  "lane": "tone", "type": "tap" },
+        { "step": 8,  "lane": "bass", "type": "tap" },
+        { "step": 10, "lane": "tone", "type": "tap" },
+        { "step": 11, "lane": "tone", "type": "tap" },
+        { "step": 12, "lane": "slap", "type": "tap" },
+        { "step": 13, "lane": "slap", "type": "tap" },
+        { "step": 14, "lane": "tone", "type": "tap" }
+      ]
+    }
+  ],
+  "tips": {
+    "ko": [
+      "쉼표 위치의 침묵이 중요합니다. 그물을 끌어당기는 호흡을 떠올리세요",
+      "베이스 다음 슬랩으로 점프하는 부분에 주의하세요",
+      "전체적으로 약간 무거운 느낌으로 연주하세요"
+    ],
+    "en": [
+      "The silence at rest positions is important. Imagine the breath of pulling nets",
+      "Watch the jump from bass to slap carefully",
+      "Play with a slightly heavy feel overall"
+    ]
+  }
+}
