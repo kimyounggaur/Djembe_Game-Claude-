@@ -1,0 +1,41 @@
+{
+  "songs": [
+    {
+      "id": "tutorial_01",
+      "title": "첫 만남",
+      "artist": "Djembe Master",
+      "bpm": 90,
+      "duration": 48,
+      "difficulty": { "easy": 1, "normal": 3, "hard": 5 },
+      "tags": ["튜토리얼", "초급"],
+      "previewStart": 4000,
+      "background": "savanna",
+      "unlocked": true
+    },
+    {
+      "id": "savanna_dawn",
+      "title": "사바나의 새벽",
+      "artist": "African Vibes",
+      "bpm": 110,
+      "duration": 60,
+      "difficulty": { "easy": 2, "normal": 5, "hard": 7 },
+      "tags": ["전통", "중급"],
+      "previewStart": 8000,
+      "background": "savanna",
+      "unlocked": true
+    },
+    {
+      "id": "rhythm_storm",
+      "title": "리듬의 폭풍",
+      "artist": "Tribal Fusion",
+      "bpm": 140,
+      "duration": 72,
+      "difficulty": { "easy": 4, "normal": 7, "hard": 10 },
+      "tags": ["퓨전", "고급"],
+      "previewStart": 12000,
+      "background": "night",
+      "unlocked": false,
+      "unlockCondition": { "type": "totalScore", "value": 100000 }
+    }
+  ]
+}
