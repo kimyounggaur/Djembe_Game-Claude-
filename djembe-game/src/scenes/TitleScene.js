@@ -4,6 +4,7 @@
 import { Scene } from './Scene.js';
 import { Theme } from '../ui/Theme.js';
 import { i18n } from '../utils/i18n.js';
+import { Storage } from '../utils/Storage.js';
 
 export class TitleScene extends Scene {
   constructor(app) {
@@ -19,8 +20,14 @@ export class TitleScene extends Scene {
     this.elapsed = 0;
     this.particles = [];
     this.spawnTimer = 0;
+    this.showOnboarding = !Storage.isRhythmOnboarded();
     this._updateLibraryProgress();
     this._buildButtons();
+  }
+
+  _dismissOnboarding() {
+    Storage.markRhythmOnboarded();
+    this.showOnboarding = false;
   }
 
   _updateLibraryProgress() {
@@ -57,6 +64,7 @@ export class TitleScene extends Scene {
       { key: 'medley', label: i18n.t('medleyChallenge'), onClick: () => this.manager.goTo('medleyMenu') },
       { key: 'tutorial', label: i18n.t('tutorial'), onClick: () => this.manager.goTo('tutorial') },
       { key: 'achievements', label: i18n.t('achievements'), onClick: () => this.manager.goTo('achievements') },
+      { key: 'stats', label: i18n.t('statsDashboard'), onClick: () => this.manager.goTo('stats') },
       { key: 'settings', label: i18n.t('settings'), onClick: () => this.manager.goTo('settings') },
       { key: 'about', label: i18n.t('about'), onClick: () => this.manager.goTo('about') }
     ];
@@ -193,9 +201,93 @@ export class TitleScene extends Scene {
     ctx.textAlign = 'center';
     ctx.font = '11px sans-serif';
     ctx.fillText('Made with Claude Opus 4.7  •  v1.0', w / 2, h - 20);
+
+    if (this.showOnboarding) this._renderOnboarding(ctx, w, h);
+  }
+
+  _renderOnboarding(ctx, w, h) {
+    const T = Theme.current;
+    ctx.save();
+    ctx.fillStyle = 'rgba(0,0,0,0.85)';
+    ctx.fillRect(0, 0, w, h);
+    const mw = Math.min(560, w - 40);
+    const mh = 380;
+    const mx = (w - mw) / 2;
+    const my = (h - mh) / 2;
+    ctx.fillStyle = '#1a2530';
+    ctx.shadowColor = 'rgba(78,205,196,0.5)';
+    ctx.shadowBlur = 30;
+    this._roundRect(ctx, mx, my, mw, mh, 16);
+    ctx.fill();
+    ctx.shadowBlur = 0;
+    ctx.strokeStyle = T.primary;
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillStyle = '#FFD93D';
+    ctx.font = '54px sans-serif';
+    ctx.fillText('🥁', w / 2, my + 70);
+    ctx.fillStyle = T.text.primary;
+    ctx.font = 'bold 24px sans-serif';
+    ctx.fillText(i18n.t('onboardingWelcome'), w / 2, my + 130);
+    ctx.font = '14px sans-serif';
+    ctx.fillStyle = T.text.secondary;
+    ctx.fillText(i18n.t('onboardingMsg'), w / 2, my + 162);
+
+    // 핵심 기능 안내
+    const tips = [
+      '🥁 12개 전통 서아프리카 리듬',
+      '🎓 단계별 학습 + 루프 연습',
+      '🎼 5개 메들리 + 직접 만들기',
+      '📚 백과사전 + 문화 정보'
+    ];
+    ctx.textAlign = 'left';
+    tips.forEach((t, i) => {
+      ctx.fillStyle = T.text.primary;
+      ctx.font = '14px sans-serif';
+      ctx.fillText(t, mx + 50, my + 200 + i * 24);
+    });
+
+    // 시작 버튼
+    const bw = 200, bh = 44;
+    const bx = w / 2 - bw / 2;
+    const by = my + mh - 70;
+    ctx.fillStyle = T.primary;
+    ctx.shadowColor = T.primary;
+    ctx.shadowBlur = 16;
+    this._roundRect(ctx, bx, by, bw, bh, 12);
+    ctx.fill();
+    ctx.shadowBlur = 0;
+    ctx.fillStyle = '#fff';
+    ctx.font = 'bold 16px sans-serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText('🎉 ' + i18n.t('onboardingStart'), w / 2, by + bh / 2);
+    this._onboardingBtn = { x: bx, y: by, w: bw, h: bh };
+
+    ctx.restore();
   }
 
   handleInput(evt) {
+    if (this.showOnboarding) {
+      if (evt.type === 'keydown' && (evt.code === 'Enter' || evt.code === 'Space' || evt.code === 'Escape')) {
+        this._dismissOnboarding();
+        return;
+      }
+      if (evt.type === 'down' && evt.source === 'touch' && this._onboardingBtn) {
+        const b = this._onboardingBtn;
+        if (evt.x >= b.x && evt.x <= b.x + b.w && evt.y >= b.y && evt.y <= b.y + b.h) {
+          this._dismissOnboarding();
+        } else {
+          // 모달 외부 클릭도 해제
+          this._dismissOnboarding();
+        }
+        return;
+      }
+      return;
+    }
     super.handleInput(evt);
     if (evt.type === 'keydown') {
       if (evt.code === 'Enter' || evt.code === 'Space') {

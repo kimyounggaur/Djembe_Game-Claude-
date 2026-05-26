@@ -1,0 +1,20 @@
+{
+  "version": "1.0.0",
+  "sections": [
+    { "id": "intro",        "title": { "ko": "젬베란?",        "en": "What is Djembe?" },     "icon": "🥁" },
+    { "id": "history",      "title": { "ko": "역사",           "en": "History" },              "icon": "📜" },
+    { "id": "construction", "title": { "ko": "구조와 제작",    "en": "Construction" },         "icon": "🛠" },
+    { "id": "three-sounds", "title": { "ko": "3가지 기본 소리", "en": "The Three Sounds" },     "icon": "🎵" },
+    { "id": "regions",      "title": { "ko": "지역별 스타일",  "en": "Regional Styles" },      "icon": "🗺" },
+    { "id": "masters",      "title": { "ko": "저명한 마스터들", "en": "Notable Masters" },      "icon": "🎤" },
+    { "id": "ensemble",     "title": { "ko": "함께 연주되는 악기", "en": "Ensemble" },          "icon": "🎶" },
+    { "id": "glossary",     "title": { "ko": "용어 사전",      "en": "Glossary" },             "icon": "📖" }
+  ],
+  "masters": [
+    { "id": "mamady-keita",   "name": "Mamady Keïta" },
+    { "id": "famoudou-konate", "name": "Famoudou Konaté" },
+    { "id": "adama-drame",    "name": "Adama Dramé" },
+    { "id": "doudou-ndiaye",  "name": "Doudou N'Diaye Rose" },
+    { "id": "mbemba-bangoura", "name": "M'Bemba Bangoura" }
+  ]
+}

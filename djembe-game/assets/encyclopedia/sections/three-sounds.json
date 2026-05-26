@@ -1,0 +1,61 @@
+{
+  "id": "three-sounds",
+  "title": { "ko": "3가지 기본 소리", "en": "The Three Sounds" },
+  "icon": "🎵",
+  "sections": [
+    {
+      "type": "heading",
+      "text": { "ko": "베이스 (Bass)", "en": "Bass" }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "ko": "공명통의 중앙을 손바닥 전체로 깊고 둔탁하게 칩니다. 가장 낮고 묵직한 소리로, 리듬의 토대를 만듭니다. 손을 가죽에 잠시 머무르면 더 깊은 베이스가 나옵니다.",
+        "en": "Strike the center of the head with the full palm — deep and dull. The lowest, heaviest tone — the foundation of the rhythm. Letting the hand linger briefly on the skin yields a deeper bass."
+      }
+    },
+    {
+      "type": "heading",
+      "text": { "ko": "톤 (Tone)", "en": "Tone" }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "ko": "가장자리 부근을 손가락 끝 4개로 짧고 분명하게 칩니다. 중간 음역의 명쾌한 소리로, 리듬의 멜로디 역할을 합니다. 즉시 손을 떼는 것이 핵심입니다.",
+        "en": "Strike near the edge with four fingertips — short and clear. A bright mid-range tone that acts as the melody of the rhythm. Releasing immediately is key."
+      }
+    },
+    {
+      "type": "heading",
+      "text": { "ko": "슬랩 (Slap)", "en": "Slap" }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "ko": "톤과 같은 위치를 손가락 끝으로 더 날카롭고 단단하게 칩니다. 가장 높고 예리한 소리로, 강조와 표정을 만듭니다. 손목을 빠르게 튕기는 것처럼 칩니다. 가장 배우기 어려운 소리입니다.",
+        "en": "Strike the same edge as Tone but harder, with sharper fingertips. The highest, most cutting tone — for accents and expression. Snap the wrist like a whip. The hardest sound to master."
+      }
+    },
+    {
+      "type": "heading",
+      "text": { "ko": "연습 순서", "en": "Learning Order" }
+    },
+    {
+      "type": "list",
+      "items": [
+        { "ko": "1. 베이스 (Bass) — 가장 쉬움. 좋은 자세부터.", "en": "1. Bass — easiest. Start with good posture." },
+        { "ko": "2. 톤 (Tone) — 가장자리 감각 익히기.", "en": "2. Tone — develop edge awareness." },
+        { "ko": "3. 슬랩 (Slap) — 가장 어려움. 인내심 필요.", "en": "3. Slap — hardest. Patience required." }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "ko": "💡 팁: 세 소리를 또렷이 구별할 수 있어야 비로소 진짜 젬베 연주가 시작됩니다. 슬랩이 톤과 구분되지 않으면 모든 리듬이 단조로워집니다.",
+        "en": "💡 Tip: True Djembe playing begins when you can clearly distinguish the three sounds. If Slap blends with Tone, every rhythm becomes monotonous."
+      }
+    }
+  ],
+  "relatedRhythms": ["kuku", "djansa", "sunu"],
+  "nextSectionId": "regions"
+}

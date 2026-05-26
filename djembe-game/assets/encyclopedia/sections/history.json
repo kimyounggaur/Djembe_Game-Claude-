@@ -1,0 +1,51 @@
+{
+  "id": "history",
+  "title": { "ko": "역사", "en": "History" },
+  "icon": "📜",
+  "sections": [
+    {
+      "type": "heading",
+      "text": { "ko": "만데(Mandé) 제국의 기원", "en": "Origin in the Mandé Empire" }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "ko": "젬베는 13세기 말리 제국의 시기 만데 민족들 사이에서 발달했습니다. 'Djembe'라는 이름은 만딘카어 '안케 줴, 안케 베(Anke djé, anke bé)' 즉 '모두 모이세, 평화롭게'에서 유래했다고 전해집니다. 즉, 젬베는 처음부터 공동체를 모으고 화합을 이루는 악기였습니다.",
+        "en": "The Djembe developed among the Mandé peoples during the Mali Empire in the 13th century. The name 'Djembe' is said to come from the Maninka phrase 'Anke djé, anke bé' — 'Everyone gather, in peace'. From the start, the Djembe was an instrument of community and harmony."
+      }
+    },
+    {
+      "type": "heading",
+      "text": { "ko": "전통적인 역할", "en": "Traditional Role" }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "ko": "젬베는 전통적으로 'Djelis(또는 Griot)'라 불리는 음악인 가문에서만 연주되었습니다. 그들은 가문의 역사, 부족의 신화, 영웅들의 이야기를 노래와 리듬으로 대대로 전승하는 역할을 했습니다. 결혼식, 장례식, 성년식, 축제 등 마을의 모든 중요한 순간에 젬베의 소리가 함께했습니다.",
+        "en": "Traditionally, the Djembe was played only within musician castes called Djelis (Griots). They transmitted family histories, tribal myths, and hero stories through song and rhythm across generations. The Djembe accompanied every important moment in village life — weddings, funerals, coming-of-age rituals, and festivals."
+      }
+    },
+    {
+      "type": "heading",
+      "text": { "ko": "세계로의 확산", "en": "Global Spread" }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "ko": "1950-60년대 기니의 초대 대통령 세쿠 투레(Sékou Touré)가 'Les Ballets Africains'를 창설하면서 젬베가 처음으로 세계 무대에 알려지기 시작했습니다. 1980년대 후반 Mamady Keïta가 미국과 유럽에서 워크숍을 열기 시작하면서 본격적으로 세계로 퍼졌습니다. 오늘날 젬베는 전 세계에서 가장 사랑받는 타악기 중 하나입니다.",
+        "en": "When Guinea's first president Sékou Touré founded 'Les Ballets Africains' in the 1950s-60s, the Djembe was first introduced to the world stage. When Mamady Keïta began holding workshops in the US and Europe in the late 1980s, it spread in earnest. Today, the Djembe is one of the most beloved percussion instruments worldwide."
+      }
+    },
+    {
+      "type": "list",
+      "items": [
+        { "ko": "13세기: 말리 제국에서 발달", "en": "13th century: Developed in the Mali Empire" },
+        { "ko": "1952: Les Ballets Africains 창설", "en": "1952: Les Ballets Africains founded" },
+        { "ko": "1986: Mamady Keïta 미국 진출", "en": "1986: Mamady Keïta begins US tours" },
+        { "ko": "1991: TTM (Tam Tam Mandingue) 학교 설립", "en": "1991: TTM (Tam Tam Mandingue) school established" }
+      ]
+    }
+  ],
+  "relatedRhythms": ["lamba", "kakilambe"],
+  "nextSectionId": "construction"
+}

@@ -44,6 +44,25 @@ export class ResultScene extends Scene {
         }
       } catch (e) {}
     });
+    // 리듬 도감 도전과제 자동 체크
+    try {
+      import('./AchievementScene.js').then(mod => {
+        const newly = mod.checkAllAchievements(this.app);
+        if (Array.isArray(newly)) {
+          newly.forEach(id => {
+            const names = {
+              first_rhythm: '첫 리듬', library_explorer: '도감 탐험가', library_completionist: '도감 완성자',
+              master_path: '마스터의 길', versatile: '다재다능', groove_master: '그루브 마스터',
+              speed_demon: '스피드 데몬', world_tour: '세계 일주', bookworm: '책벌레',
+              medley_champion: '메들리 챔피언', custom_creator: '나만의 길', culture_scholar: '문화 학도'
+            };
+            if (names[id] && !this.unlockedAchievements.includes(names[id])) {
+              this.unlockedAchievements.push(names[id]);
+            }
+          });
+        }
+      }).catch(() => {});
+    } catch (e) {}
     this._buildButtons();
   }
 

@@ -1,0 +1,64 @@
+{
+  "id": "ensemble",
+  "title": { "ko": "함께 연주되는 악기", "en": "Ensemble Instruments" },
+  "icon": "🎶",
+  "sections": [
+    {
+      "type": "heading",
+      "text": { "ko": "둔(Dunun) 패밀리", "en": "The Dunun Family" }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "ko": "젬베 앙상블의 핵심은 'Dunun'이라 불리는 세 개의 큰 통북입니다. 양쪽 가죽을 끈으로 매고, 채로 두드리며 연주합니다. 일반적으로 한 명이 한 개씩 연주하지만, 한 명이 셋을 한 번에 연주하는 'Ballet Style'도 있습니다.",
+        "en": "The heart of the Djembe ensemble is the trio of large barrel drums called 'Dunun'. Both heads are laced with rope and struck with sticks. Usually one person per drum, but the 'Ballet Style' has one player handling all three."
+      }
+    },
+    {
+      "type": "list",
+      "items": [
+        { "ko": "Sangban (생반): 가장 큰 둔. 깊고 묵직한 소리. 리듬의 '심장박동' 역할.",
+          "en": "Sangban: Largest dunun. Deep heavy tone. The 'heartbeat' of the rhythm." },
+        { "ko": "Kenkeni (켄케니): 가장 작은 둔. 높고 명쾌한 소리. 리듬의 '시계' 역할.",
+          "en": "Kenkeni: Smallest dunun. High clear tone. The 'clock' of the rhythm." },
+        { "ko": "Dununba (둔둔바): 중간 둔. 균형을 잡는 소리.",
+          "en": "Dununba: Middle dunun. The balancing voice." }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": { "ko": "코라 (Kora)", "en": "Kora" }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "ko": "큰 박을 공명통으로 사용한 21현 하프-류트. 그리오 가문에서 연주하는 신성한 악기로, 젬베와 함께 연주될 때는 주로 'Lamba' 같은 헌정 리듬에서입니다. Toumani Diabaté가 가장 유명한 현대 코라 마스터입니다.",
+        "en": "A 21-string harp-lute using a large gourd as resonator. A sacred instrument of the Griot families, played alongside the Djembe usually in dedicatory rhythms like 'Lamba'. Toumani Diabaté is the most famous contemporary Kora master."
+      }
+    },
+    {
+      "type": "heading",
+      "text": { "ko": "발라폰 (Balafon)", "en": "Balafon" }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "ko": "박을 공명통으로 사용한 목제 실로폰. 만데 문화에서 가장 오래된 멜로디 악기로, 13세기부터 전해집니다. 젬베 앙상블에서 멜로디 라인을 담당합니다.",
+        "en": "A wooden xylophone with gourd resonators. The oldest melody instrument in Mandé culture, dating back to the 13th century. Carries melodic lines in Djembe ensembles."
+      }
+    },
+    {
+      "type": "heading",
+      "text": { "ko": "샤커류 (Shakers)", "en": "Shakers" }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "ko": "Shekere(셰케레)는 박에 그물로 엮은 구슬을 입힌 흔드는 악기입니다. 손가락 사이에 끼우는 작은 'Wassakhumba'와 함께, 리듬에 질감(texture)을 더하는 보조 악기들입니다.",
+        "en": "The Shekere is a beaded gourd shaker. Along with the small finger-held 'Wassakhumba', these auxiliary instruments add texture to the rhythm."
+      }
+    }
+  ],
+  "relatedRhythms": [],
+  "nextSectionId": "glossary"
+}

@@ -42,6 +42,10 @@ export class PlayScene extends Scene {
     this.difficulty = data.difficulty || 'normal';
     this.mode = data.mode || 'arcade';
     this.songId = data.songId;
+    this.rhythmId = data.rhythmId || null;
+    this.variationIdx = data.variationIdx || 0;
+    this.medleyId = data.medleyId || null;
+    this.medleyCustom = data.medleyCustom || null;
     this.playbackRate = data.playbackRate || 1.0;
     this.gameOver = false;
     this.paused = false;
@@ -51,7 +55,14 @@ export class PlayScene extends Scene {
     this.lastJudgment = null;
     this.particles = new ParticleSystem();
     this.particles.setQuality(this.app.settings.particleQuality);
-    this.chart = await this._loadChart(this.songId);
+
+    if (this.mode === 'rhythm_challenge' && this.rhythmId) {
+      this.chart = await this._buildChartFromRhythm(this.rhythmId, this.variationIdx, data.bpm);
+    } else if (this.mode === 'medley' && (this.medleyId || this.medleyCustom)) {
+      this.chart = await this._buildChartFromMedley(this.medleyId, this.medleyCustom);
+    } else {
+      this.chart = await this._loadChart(this.songId);
+    }
     this.notesData = this.chart.notes[this.difficulty] || this.chart.notes.normal || [];
     this.spawner = new NoteSpawner();
     this.spawner.load(this.notesData);
@@ -85,6 +96,122 @@ export class PlayScene extends Scene {
     const c = this.app.chartLoader.getChart(songId);
     if (c) return c;
     return await this.app.chartLoader.load(songId, `assets/charts/${songId}.json`);
+  }
+
+  /**
+   * 리듬 패턴을 N마디 반복 차트로 변환 (rhythm_challenge 모드)
+   */
+  async _buildChartFromRhythm(rhythmId, variationIdx, customBpm) {
+    const rhythm = await this.app.rhythmLoader.loadRhythm(rhythmId);
+    const meta = this.app.rhythmLoader.getMetadata(rhythmId);
+    if (!rhythm) return this._emptyChart();
+    const variation = (rhythm.variations || [])[variationIdx];
+    const pattern = (variation && !variation.patternRef) ? { lengthInBeats: rhythm.pattern.lengthInBeats, notes: variation.notes } : rhythm.pattern;
+    const bpm = customBpm || rhythm.baseBpm || 100;
+    const subdivisions = rhythm.subdivisions || 4;
+    const stepMs = (60000 / bpm) / subdivisions;
+    const totalSteps = (pattern.lengthInBeats || 4) * subdivisions;
+    const offset = 2000;            // 2 second intro
+    const repeatBars = 6;           // 6 loops × pattern
+    const notes = [];
+    for (let rep = 0; rep < repeatBars; rep++) {
+      const repOffset = offset + rep * totalSteps * stepMs;
+      for (const n of (pattern.notes || [])) {
+        notes.push({
+          time: Math.round(repOffset + n.step * stepMs),
+          lane: n.lane,
+          type: n.type || 'tap',
+          ...(n.duration ? { duration: n.duration } : {})
+        });
+      }
+    }
+    notes.sort((a, b) => a.time - b.time);
+    const durationMs = offset + repeatBars * totalSteps * stepMs + 2000;
+    const lang = (this.app.settings?.language) || 'ko';
+    const title = rhythm.name?.[lang] || rhythm.name?.ko || rhythmId;
+    return {
+      songId: rhythmId,
+      title,
+      artist: meta?.region ? this.app.rhythmLoader.getRegion(meta.region)?.name?.[lang] || '' : '',
+      bpm,
+      offset,
+      duration: Math.round(durationMs),
+      difficulty: { easy: meta?.stars || 3, normal: meta?.stars || 5, hard: meta?.stars || 7 },
+      notes: { easy: notes, normal: notes, hard: notes },
+      _source: 'rhythm',
+      _rhythmId: rhythmId
+    };
+  }
+
+  /**
+   * 메들리 차트 빌드 (medley 모드)
+   */
+  async _buildChartFromMedley(medleyId, medleyCustom) {
+    let medley = medleyCustom;
+    if (!medley && medleyId) {
+      try {
+        const res = await fetch('assets/medleys.json');
+        const data = await res.json();
+        medley = (data.medleys || data || []).find(m => m.id === medleyId);
+      } catch (e) {
+        console.error('medley load failed', e);
+      }
+    }
+    if (!medley) return this._emptyChart();
+
+    const offset = 2000;
+    let cursor = offset;
+    const notes = [];
+    const sequence = medley.sequence || [];
+    this.medleyTransitions = []; // record where each segment starts
+
+    for (let i = 0; i < sequence.length; i++) {
+      const seg = sequence[i];
+      const rhythm = await this.app.rhythmLoader.loadRhythm(seg.rhythmId);
+      if (!rhythm) continue;
+      const variation = (rhythm.variations || []).find(v => v.id === seg.variation) || rhythm.variations?.[0];
+      const pattern = (variation && !variation.patternRef) ? { lengthInBeats: rhythm.pattern.lengthInBeats, notes: variation.notes } : rhythm.pattern;
+      const bpm = seg.bpm || rhythm.baseBpm || 100;
+      const subdivisions = rhythm.subdivisions || 4;
+      const stepMs = (60000 / bpm) / subdivisions;
+      const totalSteps = (pattern.lengthInBeats || 4) * subdivisions;
+      const bars = seg.bars || 4;
+      this.medleyTransitions.push({ time: cursor, rhythmId: seg.rhythmId, name: rhythm.name, idx: i });
+      for (let rep = 0; rep < bars; rep++) {
+        const repOffset = cursor + rep * totalSteps * stepMs;
+        for (const n of (pattern.notes || [])) {
+          notes.push({
+            time: Math.round(repOffset + n.step * stepMs),
+            lane: n.lane,
+            type: n.type || 'tap'
+          });
+        }
+      }
+      cursor += bars * totalSteps * stepMs;
+      if (medley.transitions === 'break') cursor += (60000 / bpm); // 1 beat break
+    }
+
+    notes.sort((a, b) => a.time - b.time);
+    return {
+      songId: medleyId || 'custom_medley',
+      title: medley.name?.ko || medley.name || 'Medley',
+      artist: '',
+      bpm: sequence[0]?.bpm || 100,
+      offset,
+      duration: Math.round(cursor + 2000),
+      difficulty: { easy: 5, normal: 6, hard: 8 },
+      notes: { easy: notes, normal: notes, hard: notes },
+      _source: 'medley'
+    };
+  }
+
+  _emptyChart() {
+    return {
+      songId: 'empty', title: '', artist: '',
+      bpm: 100, offset: 0, duration: 5000,
+      difficulty: { easy: 1, normal: 1, hard: 1 },
+      notes: { easy: [], normal: [], hard: [] }
+    };
   }
 
   _onInput(evt) {
@@ -195,7 +322,30 @@ export class PlayScene extends Scene {
     this.gameOver = true;
     const summary = this.score.getSummary();
     const songId = this.songId;
-    const result = Storage.saveScore(songId, this.difficulty, summary);
+    let result;
+    if (this.mode === 'rhythm_challenge' && this.rhythmId) {
+      // 리듬 도전 결과는 RhythmScores에 별도 저장
+      const r = Storage.saveRhythmScore(this.rhythmId, {
+        score: summary.score,
+        grade: summary.grade,
+        accuracy: summary.accuracy,
+        fullCombo: summary.fullCombo,
+        maxBpm: this.chart?.bpm || 0
+      });
+      result = { isNew: r.isNew, total: Storage.getTotalScore() + summary.score };
+      // 누적 점수도 업데이트
+      const t = Storage.getTotalScore() + summary.score;
+      try { localStorage.setItem('djembe_totalScore', JSON.stringify(t)); } catch (e) {}
+    } else if (this.mode === 'medley' && this.medleyId) {
+      Storage.saveMedleyScore(this.medleyId, {
+        score: summary.score,
+        grade: summary.grade,
+        accuracy: summary.accuracy
+      });
+      result = { isNew: true, total: Storage.getTotalScore() + summary.score };
+    } else {
+      result = Storage.saveScore(songId, this.difficulty, summary);
+    }
     Storage.addStats({
       totalPlayTime: this.elapsed * 1000,
       totalNotes: summary.totalNotes,
@@ -205,6 +355,7 @@ export class PlayScene extends Scene {
     setTimeout(() => {
       this.manager.goTo('result', {
         songId, difficulty: this.difficulty, mode: this.mode,
+        rhythmId: this.rhythmId, medleyId: this.medleyId,
         summary, isNew: result.isNew, totalScore: result.total, chart: this.chart
       });
     }, 800);

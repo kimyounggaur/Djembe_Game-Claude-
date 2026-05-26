@@ -1,0 +1,167 @@
+{
+  "id": "glossary",
+  "title": { "ko": "용어 사전", "en": "Glossary" },
+  "icon": "📖",
+  "terms": [
+    {
+      "term": "Djembe",
+      "pronunciation": "젬-베이",
+      "definition": {
+        "ko": "서아프리카 전통 타악기. 염소 가죽이 씌워진 컵 모양의 손북.",
+        "en": "Traditional West African percussion. A cup-shaped hand drum with a goat-skin head."
+      }
+    },
+    {
+      "term": "Djembefola",
+      "pronunciation": "젬-베이폴라",
+      "definition": {
+        "ko": "젬베 연주자. 만데어로 '젬베를 말하는 사람'.",
+        "en": "Djembe player. 'One who speaks the djembe' in Mandé."
+      }
+    },
+    {
+      "term": "Dunun",
+      "pronunciation": "두-눈",
+      "definition": {
+        "ko": "젬베 앙상블과 함께 연주되는 큰 통북. 보통 3개 한 세트 (Sangban, Kenkeni, Dununba).",
+        "en": "Large barrel drum played with the djembe ensemble. Usually a set of three (Sangban, Kenkeni, Dununba)."
+      }
+    },
+    {
+      "term": "Griot",
+      "pronunciation": "그리-오",
+      "definition": {
+        "ko": "서아프리카의 음유시인. 가문의 역사와 전통을 노래로 전승하는 음악인 카스트.",
+        "en": "West African bardic poet. A musician caste that transmits family history and tradition through song."
+      }
+    },
+    {
+      "term": "Djeli",
+      "pronunciation": "젤리",
+      "definition": {
+        "ko": "Griot의 다른 명칭. 만딘카어로 '피'를 뜻하며, 가문의 혈통을 잇는 자라는 의미.",
+        "en": "Another name for Griot. Means 'blood' in Maninka — one who continues the family bloodline."
+      }
+    },
+    {
+      "term": "Bass",
+      "pronunciation": "베이스",
+      "definition": {
+        "ko": "젬베의 세 가지 기본 소리 중 하나. 공명통 중앙을 손바닥으로 깊게 친 묵직한 소리.",
+        "en": "One of the three basic djembe sounds. Deep, heavy tone from striking the center with the palm."
+      }
+    },
+    {
+      "term": "Tone",
+      "pronunciation": "톤",
+      "definition": {
+        "ko": "가장자리를 손가락 끝으로 짧게 친 명쾌한 중간음.",
+        "en": "Bright mid-tone from striking the edge with fingertips."
+      }
+    },
+    {
+      "term": "Slap",
+      "pronunciation": "슬랩",
+      "definition": {
+        "ko": "톤과 같은 위치를 더 날카롭게 친 가장 높은 음. 가장 배우기 어려움.",
+        "en": "Sharpest, highest sound from striking the edge harder. The hardest to master."
+      }
+    },
+    {
+      "term": "Mandé",
+      "pronunciation": "만데",
+      "definition": {
+        "ko": "서아프리카의 큰 민족 그룹. 만딘카, 밤바라, 마니안 등을 포함. 젬베의 문화적 본가.",
+        "en": "Large West African ethnic group including the Mandinka, Bambara, Manian, etc. The cultural home of the djembe."
+      }
+    },
+    {
+      "term": "Kora",
+      "pronunciation": "코라",
+      "definition": {
+        "ko": "박을 공명통으로 사용한 21현 하프-류트. 그리오의 대표 악기.",
+        "en": "21-string harp-lute with a gourd resonator. Signature instrument of the Griots."
+      }
+    },
+    {
+      "term": "Balafon",
+      "pronunciation": "발라폰",
+      "definition": {
+        "ko": "박을 공명통으로 한 목제 실로폰. 만데의 가장 오래된 멜로디 악기.",
+        "en": "Wooden xylophone with gourd resonators. The oldest Mandé melodic instrument."
+      }
+    },
+    {
+      "term": "Shekere",
+      "pronunciation": "셰케레",
+      "definition": {
+        "ko": "박에 그물로 엮은 구슬을 씌운 흔드는 악기.",
+        "en": "Beaded gourd shaker."
+      }
+    },
+    {
+      "term": "TTM",
+      "pronunciation": "티-티-엠",
+      "definition": {
+        "ko": "Tam Tam Mandingue. Mamady Keïta가 1991년에 설립한 세계 최초의 젬베 학교.",
+        "en": "Tam Tam Mandingue. The world's first djembe school, founded by Mamady Keïta in 1991."
+      }
+    },
+    {
+      "term": "Polyrhythm",
+      "pronunciation": "폴리리듬",
+      "definition": {
+        "ko": "두 개 이상의 다른 박자 패턴이 동시에 진행되는 음악. 서아프리카 음악의 핵심.",
+        "en": "Multiple different rhythmic patterns playing simultaneously. Core of West African music."
+      }
+    },
+    {
+      "term": "Echauffement",
+      "pronunciation": "에쇼프망",
+      "definition": {
+        "ko": "프랑스어로 '데우기'. 리듬의 빠르기를 점차 올리는 클라이맥스 부분.",
+        "en": "French for 'warming up'. The climactic acceleration section of a rhythm."
+      }
+    },
+    {
+      "term": "Break",
+      "pronunciation": "브레이크",
+      "definition": {
+        "ko": "여러 연주자가 동시에 치는 강조 패턴. 리듬의 시작/끝/전환 신호.",
+        "en": "Accent pattern played in unison. Signals the start, end, or transition of a rhythm."
+      }
+    },
+    {
+      "term": "Call & Response",
+      "pronunciation": "콜 앤 리스폰스",
+      "definition": {
+        "ko": "리드 드러머가 '말'을 하면 앙상블이 '대답'하는 형식. 아프리카 음악의 기본 구조.",
+        "en": "The lead drummer 'calls' and the ensemble 'responds'. Foundational structure of African music."
+      }
+    },
+    {
+      "term": "Sékou Touré",
+      "pronunciation": "세쿠 투레",
+      "definition": {
+        "ko": "기니의 초대 대통령. 'Les Ballets Africains'를 통해 젬베를 세계에 알린 정치인이자 후원자.",
+        "en": "First president of Guinea. Patron who introduced the djembe to the world through 'Les Ballets Africains'."
+      }
+    },
+    {
+      "term": "Hamana",
+      "pronunciation": "하마나",
+      "definition": {
+        "ko": "기니의 특정 지역. Dundunba 리듬의 발원지.",
+        "en": "A specific region of Guinea. Birthplace of the Dundunba rhythm."
+      }
+    },
+    {
+      "term": "Initiation",
+      "pronunciation": "이니시에이션",
+      "definition": {
+        "ko": "성년식. 청소년이 성인이 되는 통과 의례. Soli, Tiriba 등의 리듬이 사용됨.",
+        "en": "Coming-of-age ceremony. Rite of passage from youth to adulthood. Uses rhythms like Soli, Tiriba."
+      }
+    }
+  ]
+}

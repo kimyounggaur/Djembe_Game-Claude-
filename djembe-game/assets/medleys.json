@@ -1,0 +1,100 @@
+{
+  "version": "1.0.0",
+  "medleys": [
+    {
+      "id": "guinea_grand_tour",
+      "name": { "ko": "기니 대장정", "en": "Grand Tour of Guinea" },
+      "description": {
+        "ko": "기니의 대표 리듬 5가지를 연이어 연주합니다",
+        "en": "Five iconic Guinean rhythms played in succession"
+      },
+      "difficulty": 6,
+      "region": "guinea",
+      "transitions": "smooth",
+      "duration": 240,
+      "sequence": [
+        { "rhythmId": "kuku",     "variation": "kuku_basic",     "bars": 4, "bpm": 100 },
+        { "rhythmId": "soli",     "variation": "soli_basic",     "bars": 4, "bpm": 95 },
+        { "rhythmId": "macru",    "variation": "macru_basic",    "bars": 4, "bpm": 100 },
+        { "rhythmId": "tiriba",   "variation": "tiriba_basic",   "bars": 4, "bpm": 110 },
+        { "rhythmId": "dundunba", "variation": "dundunba_basic", "bars": 4, "bpm": 110 }
+      ],
+      "unlocked": true
+    },
+    {
+      "id": "mali_journey",
+      "name": { "ko": "말리 여행", "en": "Mali Journey" },
+      "description": {
+        "ko": "말리의 풍부한 리듬 유산을 탐험합니다",
+        "en": "Explore Mali's rich rhythmic heritage"
+      },
+      "difficulty": 5,
+      "region": "mali",
+      "transitions": "smooth",
+      "duration": 200,
+      "sequence": [
+        { "rhythmId": "djansa", "variation": "djansa_basic", "bars": 4, "bpm": 100 },
+        { "rhythmId": "sunu",   "variation": "sunu_basic",   "bars": 4, "bpm": 105 },
+        { "rhythmId": "kassa",  "variation": "kassa_basic",  "bars": 4, "bpm": 115 },
+        { "rhythmId": "sofa",   "variation": "sofa_basic",   "bars": 4, "bpm": 125 }
+      ],
+      "unlocked": true
+    },
+    {
+      "id": "celebration_set",
+      "name": { "ko": "축제 모음", "en": "Celebration Set" },
+      "description": {
+        "ko": "축제 리듬만 모아 점진적으로 빨라집니다",
+        "en": "Celebration rhythms gradually accelerating"
+      },
+      "difficulty": 5,
+      "transitions": "accelerate",
+      "duration": 220,
+      "sequence": [
+        { "rhythmId": "yankadi", "variation": "yankadi_basic", "bars": 4, "bpm": 80 },
+        { "rhythmId": "kuku",    "variation": "kuku_basic",    "bars": 4, "bpm": 100 },
+        { "rhythmId": "djansa",  "variation": "djansa_basic",  "bars": 4, "bpm": 110 },
+        { "rhythmId": "tiriba",  "variation": "tiriba_basic",  "bars": 4, "bpm": 120 },
+        { "rhythmId": "sofa",    "variation": "sofa_basic",    "bars": 4, "bpm": 130 }
+      ],
+      "unlocked": true
+    },
+    {
+      "id": "slow_immersion",
+      "name": { "ko": "느림의 미학", "en": "Beauty of Slowness" },
+      "description": {
+        "ko": "느린 리듬들로 깊이 있는 연주를 경험합니다",
+        "en": "Deep playing experience with slow rhythms"
+      },
+      "difficulty": 3,
+      "transitions": "break",
+      "duration": 180,
+      "sequence": [
+        { "rhythmId": "yankadi", "variation": "yankadi_basic", "bars": 4, "bpm": 80 },
+        { "rhythmId": "soli",    "variation": "soli_basic",    "bars": 4, "bpm": 90 },
+        { "rhythmId": "kakilambe", "variation": "kakilambe_basic", "bars": 4, "bpm": 95 }
+      ],
+      "unlocked": true
+    },
+    {
+      "id": "master_path",
+      "name": { "ko": "마스터의 길", "en": "Path of the Master" },
+      "description": {
+        "ko": "고급 리듬 5가지 — 마스터만 도전 가능",
+        "en": "Five advanced rhythms — only for masters"
+      },
+      "difficulty": 10,
+      "transitions": "smooth",
+      "duration": 280,
+      "unlockCondition": { "type": "masteredCount", "value": 5 },
+      "sequence": [
+        { "rhythmId": "dundunba",  "variation": "dundunba_advanced",  "bars": 4, "bpm": 115 },
+        { "rhythmId": "sofa",      "variation": "sofa_advanced",      "bars": 4, "bpm": 135 },
+        { "rhythmId": "lamba",     "variation": "lamba_griot",        "bars": 4, "bpm": 145 },
+        { "rhythmId": "kakilambe", "variation": "kakilambe_ritual",   "bars": 4, "bpm": 100 },
+        { "rhythmId": "tiriba",    "variation": "tiriba_basic",       "bars": 4, "bpm": 130 }
+      ],
+      "unlocked": false
+    }
+  ]
+}

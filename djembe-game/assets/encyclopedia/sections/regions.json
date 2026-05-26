@@ -1,0 +1,53 @@
+{
+  "id": "regions",
+  "title": { "ko": "지역별 스타일", "en": "Regional Styles" },
+  "icon": "🗺",
+  "sections": [
+    {
+      "type": "heading",
+      "text": { "ko": "🇬🇳 기니 (Guinea)", "en": "🇬🇳 Guinea" }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "ko": "젬베의 본고장. 만데, 마니안, 수수, 발란타 등 다양한 부족의 리듬이 발달했습니다. 기니 스타일은 폴리리듬이 정교하고, 다양한 변주와 솔로 즉흥이 풍부합니다. 대표 마스터: Famoudou Konaté, Mamady Keïta. 대표 리듬: Kuku, Soli, Dundunba, Tiriba.",
+        "en": "The birthplace of the Djembe. Rhythms developed among the Mandé, Manian, Soussou, and Balanta peoples. Guinean style features intricate polyrhythms with abundant variations and solo improvisation. Notable masters: Famoudou Konaté, Mamady Keïta. Representative rhythms: Kuku, Soli, Dundunba, Tiriba."
+      }
+    },
+    {
+      "type": "heading",
+      "text": { "ko": "🇲🇱 말리 (Mali)", "en": "🇲🇱 Mali" }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "ko": "밤바라, 만딘카, 카송케 부족의 음악이 중심입니다. 말리 스타일은 노래(Vocals)와의 결합이 깊고, 코라(Kora) 같은 현악기와 함께 연주되는 경우가 많습니다. 그리오(Griot) 전통이 가장 잘 보존된 지역. 대표 마스터: Adama Dramé. 대표 리듬: Djansa, Sunu, Sofa, Lamba.",
+        "en": "Centered on the music of the Bambara, Mandinka, and Khassonké peoples. Malian style is deeply integrated with vocals and often paired with stringed instruments like the Kora. The Griot tradition is best preserved here. Notable master: Adama Dramé. Representative rhythms: Djansa, Sunu, Sofa, Lamba."
+      }
+    },
+    {
+      "type": "heading",
+      "text": { "ko": "🇸🇳 세네갈 (Senegal)", "en": "🇸🇳 Senegal" }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "ko": "월로프(Wolof)족이 주를 이루며, 사바르(Sabar)라는 채로 치는 북이 더 유명합니다. 그러나 젬베도 함께 연주되며, 특히 도시 음악과 결합한 현대적 스타일이 발달했습니다. 대표 마스터: Doudou N'Diaye Rose.",
+        "en": "Dominated by the Wolof people, where the stick-played Sabar drum is more famous. The Djembe is also played, with modern urban-influenced styles. Notable master: Doudou N'Diaye Rose."
+      }
+    },
+    {
+      "type": "heading",
+      "text": { "ko": "🇧🇫 부르키나파소 & 코트디부아르", "en": "🇧🇫 Burkina Faso & Côte d'Ivoire" }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "ko": "기니와 말리 사이에 위치한 이 지역들은 양쪽 스타일이 융합된 형태가 많습니다. 부르키나파소의 Adama Dramé는 가장 빠르고 정교한 슬랩으로 유명합니다.",
+        "en": "Located between Guinea and Mali, these regions feature blended styles. Adama Dramé of Burkina Faso is famous for the fastest, most precise slaps."
+      }
+    }
+  ],
+  "relatedRhythms": ["kuku", "djansa", "kakilambe"],
+  "nextSectionId": "masters"
+}

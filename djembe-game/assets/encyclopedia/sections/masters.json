@@ -1,0 +1,64 @@
+{
+  "id": "masters",
+  "title": { "ko": "저명한 마스터들", "en": "Notable Masters" },
+  "icon": "🎤",
+  "sections": [
+    {
+      "type": "heading",
+      "text": { "ko": "Mamady Keïta (1950-2021)", "en": "Mamady Keïta (1950-2021)" }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "ko": "기니 발란두구 출신. 'Les Ballets Africains'에서 활동했으며 1991년 'Tam Tam Mandingue'라는 세계 최초의 젬베 학교를 벨기에에 설립했습니다. 세계에서 가장 많은 제자를 둔 마스터로, 'A Life for the Djembé'라는 책과 다수의 음반을 남겼습니다. 그의 가르침은 'TTM' 메소드라 불리며 전 세계 표준이 되었습니다.",
+        "en": "Born in Balandugu, Guinea. Performed with Les Ballets Africains, and in 1991 founded the world's first Djembe school 'Tam Tam Mandingue' in Belgium. The master with the most students worldwide, he left behind the book 'A Life for the Djembé' and numerous albums. His teaching, called the 'TTM Method', has become a global standard."
+      }
+    },
+    {
+      "type": "heading",
+      "text": { "ko": "Famoudou Konaté (1940-)", "en": "Famoudou Konaté (1940-)" }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "ko": "기니 사니얀쿠르 출신. 'Les Ballets Africains'의 마스터 드러머로 30년 이상 활동했습니다. 'Kuku의 살아있는 전설'로 불리며, 그의 연주는 가장 정통적이고 깊이 있는 만데 스타일로 평가받습니다. 'Rhythms and Songs from Guinea' 등 학술적 기록도 남겼습니다.",
+        "en": "Born in Sangbarala, Guinea. Master drummer of Les Ballets Africains for over 30 years. Called 'the living legend of Kuku', his playing is regarded as the most authentic and profound Mandé style. He also left scholarly records including 'Rhythms and Songs from Guinea'."
+      }
+    },
+    {
+      "type": "heading",
+      "text": { "ko": "Adama Dramé (1954-)", "en": "Adama Dramé (1954-)" }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "ko": "부르키나파소 출신의 솔로 젬베 명인. 'Foliba'라는 전설적인 그룹의 리더이며, 1980년대부터 유럽 전역에서 공연했습니다. 그의 연주는 놀라운 속도와 정확성으로 유명하며, '아프리카의 Buddy Rich'로 불립니다.",
+        "en": "Solo Djembe virtuoso from Burkina Faso. Leader of the legendary group 'Foliba', he has performed across Europe since the 1980s. His playing is renowned for breathtaking speed and precision — called 'the Buddy Rich of Africa'."
+      }
+    },
+    {
+      "type": "heading",
+      "text": { "ko": "Doudou N'Diaye Rose (1930-2015)", "en": "Doudou N'Diaye Rose (1930-2015)" }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "ko": "세네갈의 사바르(Sabar) 마스터이자 젬베 연주자. UNESCO 살아있는 인류 보물로 선정되었으며, 세네갈 국가 무용단의 음악 감독이었습니다. 100명 이상의 드러머를 지휘하는 '드럼 오케스트라'로 유명합니다.",
+        "en": "Sabar master and Djembe player from Senegal. Named a UNESCO Living Human Treasure, he served as music director of the National Dance Company of Senegal. Famous for conducting 'drum orchestras' of over 100 drummers."
+      }
+    },
+    {
+      "type": "heading",
+      "text": { "ko": "M'Bemba Bangoura", "en": "M'Bemba Bangoura" }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "ko": "기니의 'Les Percussions de Guinée' 마스터. 강력하고 카리스마 넘치는 연주 스타일로 유명하며, 미국에서 활발히 가르치고 있습니다. Yankadi-Macru 듀얼 리듬의 권위자입니다.",
+        "en": "Master of Guinea's 'Les Percussions de Guinée'. Famous for powerful, charismatic playing, now teaching extensively in the US. An authority on the Yankadi-Macru dual rhythm."
+      }
+    }
+  ],
+  "relatedRhythms": ["kuku", "soli", "dundunba"],
+  "nextSectionId": "ensemble"
+}

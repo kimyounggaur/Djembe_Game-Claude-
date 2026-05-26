@@ -145,6 +145,28 @@ export class RhythmLibraryScene extends Scene {
     ctx.font = 'bold 14px sans-serif';
     ctx.fillStyle = '#FFD93D';
     ctx.fillText(`${cleared} / ${totalCount} ${i18n.t('cleared')}`, w - 16, 28);
+
+    // 백과사전 + 통계 버튼
+    ctx.fillStyle = 'rgba(255,255,255,0.15)';
+    this._roundRect(ctx, w - 240, 14, 90, 32, 8);
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(255,255,255,0.3)';
+    ctx.stroke();
+    ctx.fillStyle = '#fff';
+    ctx.font = '12px sans-serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText('📚 백과사전', w - 195, 30);
+    this._encyBtn = { x: w - 240, y: 14, w: 90, h: 32 };
+
+    ctx.fillStyle = 'rgba(255,255,255,0.15)';
+    this._roundRect(ctx, w - 340, 14, 90, 32, 8);
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(255,255,255,0.3)';
+    ctx.stroke();
+    ctx.fillStyle = '#fff';
+    ctx.fillText('📊 통계', w - 295, 30);
+    this._statsBtn = { x: w - 340, y: 14, w: 90, h: 32 };
     ctx.restore();
 
     // 필터 바
@@ -262,6 +284,12 @@ export class RhythmLibraryScene extends Scene {
 
   _handleClick(mx, my) {
     if (mx < 50 && my < 50) { this.manager.goTo('title'); return; }
+    if (this._encyBtn && mx >= this._encyBtn.x && mx <= this._encyBtn.x + this._encyBtn.w && my >= this._encyBtn.y && my <= this._encyBtn.y + this._encyBtn.h) {
+      this.manager.goTo('rhythmEncyclopedia'); return;
+    }
+    if (this._statsBtn && mx >= this._statsBtn.x && mx <= this._statsBtn.x + this._statsBtn.w && my >= this._statsBtn.y && my <= this._statsBtn.y + this._statsBtn.h) {
+      this.manager.goTo('stats'); return;
+    }
     if (my < 56) return;
     if (this.filterBar && my < 112) {
       if (this.filterBar.hitTest(mx, my)) return;

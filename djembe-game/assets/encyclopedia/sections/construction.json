@@ -1,0 +1,50 @@
+{
+  "id": "construction",
+  "title": { "ko": "구조와 제작", "en": "Construction" },
+  "icon": "🛠",
+  "sections": [
+    {
+      "type": "heading",
+      "text": { "ko": "젬베의 구조", "en": "Anatomy of the Djembe" }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "ko": "젬베는 크게 세 부분으로 나뉩니다: 공명통(Body), 가죽 헤드(Skin), 그리고 튜닝 시스템(Ropes & Rings). 각각의 부분이 소리의 특징을 만들어내며, 어떤 재료를 쓰느냐에 따라 음색이 크게 달라집니다.",
+        "en": "The Djembe consists of three main parts: the body, the skin head, and the tuning system (ropes and rings). Each contributes to the unique tone, and choice of materials greatly affects the sound."
+      }
+    },
+    {
+      "type": "list",
+      "items": [
+        { "ko": "공명통 (Body): 단단한 나무를 통째로 깎아 만듭니다. 잘 자란 나무일수록 진동이 풍부하고 음색이 깊습니다.",
+          "en": "Body: Carved from a single piece of hardwood. Well-grown wood gives richer vibration and deeper tone." },
+        { "ko": "가죽 (Skin): 염소 가죽이 가장 흔하며, 두꺼울수록 베이스가 깊고 얇을수록 슬랩이 날카롭습니다.",
+          "en": "Skin: Goat skin is most common — thicker gives deeper bass, thinner gives sharper slaps." },
+        { "ko": "튜닝 (Tuning): 두 개의 강철 링 사이를 가죽 끈으로 X자 형태로 엮어 가죽의 장력을 조절합니다.",
+          "en": "Tuning: Two steel rings are laced with X-shaped ropes to adjust skin tension." }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": { "ko": "전통 vs 현대", "en": "Traditional vs Modern" }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "ko": "전통 젬베는 Lenke 또는 Djalla라 불리는 단단한 활엽수로 만들어지며, 무게가 12-18kg에 달합니다. 현대의 학습용 젬베는 마호가니, Iroko, 또는 합성 재질을 사용해 가볍게(6-10kg) 만들어집니다. 음색은 전통 젬베가 훨씬 풍부하지만, 손목 부담 측면에서는 현대 젬베가 유리합니다.",
+        "en": "Traditional Djembes are made of hardwoods called Lenke or Djalla and weigh 12-18kg. Modern instructional Djembes use mahogany, Iroko, or synthetic materials, weighing 6-10kg. Traditional Djembes have richer tone but are harder on the wrists."
+      }
+    },
+    {
+      "type": "quote",
+      "text": {
+        "ko": "젬베는 나무이고, 가죽이고, 끈이지만 무엇보다 영혼이다.",
+        "en": "The Djembe is wood, skin, rope — but above all, it is spirit."
+      },
+      "author": "Famoudou Konaté"
+    }
+  ],
+  "relatedRhythms": [],
+  "nextSectionId": "three-sounds"
+}

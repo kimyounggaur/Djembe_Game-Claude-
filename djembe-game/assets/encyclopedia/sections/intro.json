@@ -1,0 +1,60 @@
+{
+  "id": "intro",
+  "title": { "ko": "젬베란?", "en": "What is Djembe?" },
+  "icon": "🥁",
+  "sections": [
+    {
+      "type": "heading",
+      "text": { "ko": "젬베의 정의", "en": "Definition" }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "ko": "젬베(Djembe)는 서아프리카 만데(Mandé) 민족의 전통 타악기로, 약 12세기경 말리 제국의 시기에 기원한 것으로 알려져 있습니다. 단단한 나무를 깎아 만든 컵 모양의 공명통 위에 염소 가죽이 씌워진 한 손 타악기이며, 손바닥과 손가락만으로 연주합니다.",
+        "en": "The Djembe is a traditional percussion instrument of the Mandé people of West Africa, said to have originated during the Mali Empire around the 12th century. It is a hand drum with a goat-skin head stretched over a cup-shaped wooden body, played with bare hands."
+      }
+    },
+    {
+      "type": "heading",
+      "text": { "ko": "왜 특별한가요?", "en": "Why is it special?" }
+    },
+    {
+      "type": "paragraph",
+      "text": {
+        "ko": "젬베는 한 악기로 베이스, 톤, 슬랩 세 가지 완전히 다른 음색을 낼 수 있는 독특한 악기입니다. 이 세 가지 소리의 조합으로 마치 여러 악기를 동시에 연주하는 듯한 풍부한 리듬을 만들어냅니다.",
+        "en": "The Djembe is unique in producing three distinctly different tones — Bass, Tone, and Slap — from a single instrument. The combination creates rich rhythms reminiscent of multiple instruments playing simultaneously."
+      }
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "ko": "공명통: 단단한 나무 (전통적으로 Lenke 또는 Djalla)",
+          "en": "Body: Hardwood (traditionally Lenke or Djalla)"
+        },
+        {
+          "ko": "가죽: 염소 또는 영양 가죽",
+          "en": "Head: Goat or antelope skin"
+        },
+        {
+          "ko": "튜닝: 가죽 끈으로 조절",
+          "en": "Tuning: Leather rope tension"
+        },
+        {
+          "ko": "크기: 직경 30-38cm, 높이 58-63cm",
+          "en": "Size: 30-38cm diameter, 58-63cm height"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "text": {
+        "ko": "젬베의 가장 중요한 비밀은 그것의 말이 아니다. 그것의 마음이다.",
+        "en": "The greatest secret of the Djembe is not its voice, but its heart."
+      },
+      "author": "Mamady Keïta"
+    }
+  ],
+  "relatedRhythms": ["kuku", "soli"],
+  "nextSectionId": "history"
+}
