@@ -211,7 +211,7 @@ export class PlayScene extends Scene {
   }
 
   update(dt) {
-    if (this.paused) return;
+    if (this.paused || !this.conductor || !this.spawner) return;
     this.elapsed += dt;
     this.conductor.update();
     const t = this.conductor.songPositionInMs;
@@ -233,6 +233,7 @@ export class PlayScene extends Scene {
   }
 
   render(ctx, w, h) {
+    if (!this.conductor || !this.spawner) return;
     const T = Theme.current;
     const beatPulse = 1 + this.bgBeatPulse * 0.02;
     ctx.save();
